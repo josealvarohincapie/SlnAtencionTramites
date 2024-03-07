@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Documentos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Documentos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ulasp25.ultimus.com/WCFDocumentos/WCFDocumentos.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="Parametros">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Documentos" nillable="true" type="tns:ArrayOfDocumento" />
+      <xs:element minOccurs="0" name="NombreMht" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Proceso" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Parametros" nillable="true" type="tns:Parametros" />
+  <xs:complexType name="ArrayOfDocumento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Documento" nillable="true" type="tns:Documento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumento" nillable="true" type="tns:ArrayOfDocumento" />
+  <xs:complexType name="Documento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campos" nillable="true" type="tns:ArrayOfCampo" />
+      <xs:element minOccurs="0" name="CantCopias" type="xs:int" />
+      <xs:element minOccurs="0" name="Firmas" nillable="true" type="tns:ArrayOfFirma" />
+      <xs:element minOccurs="0" name="Imagenes" nillable="true" type="tns:ArrayOfImagen" />
+      <xs:element minOccurs="0" name="NombrePlantilla" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tablas" nillable="true" type="tns:ArrayOfTabla" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Documento" nillable="true" type="tns:Documento" />
+  <xs:complexType name="ArrayOfCampo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Campo" nillable="true" type="tns:Campo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCampo" nillable="true" type="tns:ArrayOfCampo" />
+  <xs:complexType name="Campo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Campo" nillable="true" type="tns:Campo" />
+  <xs:complexType name="ArrayOfFirma">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Firma" nillable="true" type="tns:Firma" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFirma" nillable="true" type="tns:ArrayOfFirma" />
+  <xs:complexType name="Firma">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NombFirma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Posicion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Firma" nillable="true" type="tns:Firma" />
+  <xs:complexType name="ArrayOfImagen">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Imagen" nillable="true" type="tns:Imagen" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfImagen" nillable="true" type="tns:ArrayOfImagen" />
+  <xs:complexType name="Imagen">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Ancho" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Posicion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RutaImgen" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Imagen" nillable="true" type="tns:Imagen" />
+  <xs:complexType name="ArrayOfTabla">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tabla" nillable="true" type="tns:Tabla" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTabla" nillable="true" type="tns:ArrayOfTabla" />
+  <xs:complexType name="Tabla">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FilasResultado" nillable="true" type="tns:ArrayOfFilaResultado" />
+      <xs:element minOccurs="0" name="NombreEstiloPersonalizadoFilas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Puntero" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Tabla" nillable="true" type="tns:Tabla" />
+  <xs:complexType name="ArrayOfFilaResultado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FilaResultado" nillable="true" type="tns:FilaResultado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFilaResultado" nillable="true" type="tns:ArrayOfFilaResultado" />
+  <xs:complexType name="FilaResultado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Columnas" nillable="true" type="tns:ArrayOfColumnaResultado" />
+      <xs:element minOccurs="0" name="GenerarEnNuevaTabla" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FilaResultado" nillable="true" type="tns:FilaResultado" />
+  <xs:complexType name="ArrayOfColumnaResultado">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ColumnaResultado" nillable="true" type="tns:ColumnaResultado" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfColumnaResultado" nillable="true" type="tns:ArrayOfColumnaResultado" />
+  <xs:complexType name="ColumnaResultado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ancho" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="HorizontalMerge" type="tns:Merge" />
+      <xs:element minOccurs="0" name="Imagen" nillable="true" type="tns:Imagen" />
+      <xs:element minOccurs="0" name="Link" nillable="true" type="tns:Link" />
+      <xs:element minOccurs="0" name="NombreEstiloPersonalizado_Individual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" type="tns:TipoBookmark" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VerticalMerge" type="tns:Merge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ColumnaResultado" nillable="true" type="tns:ColumnaResultado" />
+  <xs:simpleType name="Merge">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="First" />
+      <xs:enumeration value="Previous" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Merge" nillable="true" type="tns:Merge" />
+  <xs:complexType name="Link">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Posicion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Link" nillable="true" type="tns:Link" />
+  <xs:simpleType name="TipoBookmark">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Adicional" />
+      <xs:enumeration value="Firma" />
+      <xs:enumeration value="Imagen" />
+      <xs:enumeration value="Hyperlink" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TipoBookmark" nillable="true" type="tns:TipoBookmark" />
+  <xs:complexType name="ResultadoGeneracion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Excepciones" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Resultado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="RutaFisica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RutaVirtual" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResultadoGeneracion" nillable="true" type="tns:ResultadoGeneracion" />
+  <xs:complexType name="Entrada">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConnectionString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Formato" type="tns:FormatoSalida" />
+      <xs:element minOccurs="0" name="NombreDocumentoGenerado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Plantillas" nillable="true" type="tns:ArrayOfDocumentoDB" />
+      <xs:element minOccurs="0" name="TipoDb" type="tns:TipoDB" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Entrada" nillable="true" type="tns:Entrada" />
+  <xs:simpleType name="FormatoSalida">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="doc" />
+      <xs:enumeration value="docx" />
+      <xs:enumeration value="pdf" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FormatoSalida" nillable="true" type="tns:FormatoSalida" />
+  <xs:complexType name="ArrayOfDocumentoDB">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentoDB" nillable="true" type="tns:DocumentoDB" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentoDB" nillable="true" type="tns:ArrayOfDocumentoDB" />
+  <xs:complexType name="DocumentoDB">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CamposAdicionales" nillable="true" type="tns:ArrayOfCampo" />
+      <xs:element minOccurs="0" name="Filtro" nillable="true" type="tns:Filtro" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FiltrosQuery" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Firmas" nillable="true" type="tns:ArrayOfFirma" />
+      <xs:element minOccurs="0" name="Fuente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Imagenes" nillable="true" type="tns:ArrayOfImagen" />
+      <xs:element minOccurs="0" name="Links" nillable="true" type="tns:ArrayOfLink" />
+      <xs:element minOccurs="0" name="NumeroCopias" type="xs:int" />
+      <xs:element minOccurs="0" name="Ruta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tablas" nillable="true" type="tns:ArrayOfTablaDB" />
+      <xs:element minOccurs="0" name="TablasAdicionales" nillable="true" type="tns:ArrayOfTabla" />
+      <xs:element minOccurs="0" name="TipoFuente" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentoDB" nillable="true" type="tns:DocumentoDB" />
+  <xs:complexType name="Filtro">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NombreColumna" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" type="tns:TipoFiltro" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Filtro" nillable="true" type="tns:Filtro" />
+  <xs:simpleType name="TipoFiltro">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Entero" />
+      <xs:enumeration value="Texto" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TipoFiltro" nillable="true" type="tns:TipoFiltro" />
+  <xs:complexType name="ArrayOfLink">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Link" nillable="true" type="tns:Link" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLink" nillable="true" type="tns:ArrayOfLink" />
+  <xs:complexType name="ArrayOfTablaDB">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TablaDB" nillable="true" type="tns:TablaDB" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTablaDB" nillable="true" type="tns:ArrayOfTablaDB" />
+  <xs:complexType name="TablaDB">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ColumnasAMostrar" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Filtro" nillable="true" type="tns:Filtro" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FiltrosQuery" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Fuente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Puntero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoFuente" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TablaDB" nillable="true" type="tns:TablaDB" />
+  <xs:simpleType name="TipoDB">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SQLServer" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TipoDB" nillable="true" type="tns:TipoDB" />
+  <xs:complexType name="EntradaCPS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConnectionString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Formato" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreDocumentoGenerado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Plantillas" nillable="true" type="tns:ArrayOfDocumentoDB" />
+      <xs:element minOccurs="0" name="TipoDb" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntradaCPS" nillable="true" type="tns:EntradaCPS" />
+</xs:schema>

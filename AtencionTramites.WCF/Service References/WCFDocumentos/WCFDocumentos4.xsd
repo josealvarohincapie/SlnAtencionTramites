@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="WCFDocumentos" elementFormDefault="qualified" targetNamespace="WCFDocumentos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ulasp25.ultimus.com/WCFDocumentos/WCFDocumentos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Documentos" />
+  <xs:element name="GenerarDocumentoObj">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Documentos" minOccurs="0" name="inObj" nillable="true" type="q1:Parametros" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumentoObjResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Documentos" minOccurs="0" name="GenerarDocumentoObjResult" nillable="true" type="q2:ResultadoGeneracion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumentoXml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strXml" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumentoXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Documentos" minOccurs="0" name="GenerarDocumentoXmlResult" nillable="true" type="q3:ResultadoGeneracion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Documentos" minOccurs="0" name="obj" nillable="true" type="q4:Entrada" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Documentos" minOccurs="0" name="GenerarDocumentoResult" nillable="true" type="q5:ResultadoGeneracion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumentoCPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Documentos" minOccurs="0" name="obj" nillable="true" type="q6:EntradaCPS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarDocumentoCPSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Documentos" minOccurs="0" name="GenerarDocumentoCPSResult" nillable="true" type="q7:ResultadoGeneracion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookmarks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DirPlantilla" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="label" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookmarksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetBookmarksResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

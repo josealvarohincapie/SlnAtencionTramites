@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="WCFDocumentos" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="WCFDocumentos" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="WCFDocumentos/Imports">
+      <xsd:import schemaLocation="http://ulasp25.ultimus.com/WCFDocumentos/WCFDocumentos.svc?xsd=xsd0" namespace="WCFDocumentos" />
+      <xsd:import schemaLocation="http://ulasp25.ultimus.com/WCFDocumentos/WCFDocumentos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ulasp25.ultimus.com/WCFDocumentos/WCFDocumentos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Documentos" />
+      <xsd:import schemaLocation="http://ulasp25.ultimus.com/WCFDocumentos/WCFDocumentos.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumentoObj_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoObj" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumentoObj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoObjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumentoXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoXml" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumentoXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumentoCPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoCPS" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GenerarDocumentoCPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarDocumentoCPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GetBookmarks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookmarks" />
+  </wsdl:message>
+  <wsdl:message name="IWCFDocumentos_GetBookmarks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookmarksResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFDocumentos">
+    <wsdl:operation name="GenerarDocumentoObj">
+      <wsdl:input wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumentoObj" message="tns:IWCFDocumentos_GenerarDocumentoObj_InputMessage" />
+      <wsdl:output wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumentoObjResponse" message="tns:IWCFDocumentos_GenerarDocumentoObj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarDocumentoXml">
+      <wsdl:input wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumentoXml" message="tns:IWCFDocumentos_GenerarDocumentoXml_InputMessage" />
+      <wsdl:output wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumentoXmlResponse" message="tns:IWCFDocumentos_GenerarDocumentoXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarDocumento">
+      <wsdl:input wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumento" message="tns:IWCFDocumentos_GenerarDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumentoResponse" message="tns:IWCFDocumentos_GenerarDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarDocumentoCPS">
+      <wsdl:input wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumentoCPS" message="tns:IWCFDocumentos_GenerarDocumentoCPS_InputMessage" />
+      <wsdl:output wsaw:Action="WCFDocumentos/IWCFDocumentos/GenerarDocumentoCPSResponse" message="tns:IWCFDocumentos_GenerarDocumentoCPS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookmarks">
+      <wsdl:input wsaw:Action="WCFDocumentos/IWCFDocumentos/GetBookmarks" message="tns:IWCFDocumentos_GetBookmarks_InputMessage" />
+      <wsdl:output wsaw:Action="WCFDocumentos/IWCFDocumentos/GetBookmarksResponse" message="tns:IWCFDocumentos_GetBookmarks_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
