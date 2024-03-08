@@ -647,6 +647,7 @@
     <Content Include="Scripts\summernote\font\summernote.eot" />
     <None Include="Scripts\UltimusFramework.intellisense.js" />
     <Content Include="Scripts\vfs_fonts.js" />
+    <Content Include="Ultimus.Framework\AtencionTramitesAse\API.GenerarCarta.js" />
     <Content Include="Ultimus.Framework\ClasificacionTramites\API.ClasificacionTramite.js" />
     <Content Include="Ultimus.Framework\ClasificacionTramites\API.Seguimiento.js" />
     <Content Include="Ultimus.Framework\AtencionTramitesAse\API.Seguimiento.js" />
@@ -679,6 +680,7 @@
     <Content Include="Views\ClasificacionTramites\Radicado.cshtml" />
     <Content Include="Views\ClasificacionTramites\Seguimiento.cshtml" />
     <Content Include="Views\ClasificacionTramites\ClasificacionTramite.cshtml" />
+    <Content Include="Views\AtencionTramiteAse\GenerarCarta.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
