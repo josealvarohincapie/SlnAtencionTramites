@@ -101,8 +101,8 @@ namespace AtencionTramites
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
 
-            bundles.Add(new ScriptBundle("~/Scripts/ClasificacionTramites/Radicado")
-                .Include("~/Ultimus.Framework/ClasificacionTramites/API.Radicado.js")
+            bundles.Add(new ScriptBundle("~/Scripts/ClasificacionTramites/ClasificacionTramite")
+                .Include("~/Ultimus.Framework/ClasificacionTramites/API.ClasificacionTramite.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
 

@@ -62,5 +62,12 @@ namespace AtencionTramites.Controllers
 
             return View();
         }
+
+        public ActionResult ClasificacionTramite()
+        {
+            InitControllers();
+
+            return View();
+        }
     }
 }

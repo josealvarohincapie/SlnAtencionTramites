@@ -1,5 +1,5 @@
 ﻿jQuery(document).ready(function () {
-    UpdateControlsSettings("FILTRO_FRM_BotonesEE", "BotonesEE", "frmBotones", function () {
+    UpdateControlsSettings("FILTRO_FRM_BotonesAT", "BotonesAT", "frmBotones", function () {
        getDataModel();
     });
 })
