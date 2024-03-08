@@ -7,9 +7,9 @@ using Ultimus.Utilitarios;
 
 namespace AtencionTramites.Controllers
 {
-    public class AtencionTramiteAseController : BaseController
+    public class GenerarCartaController : BaseController
     {
-        UltimusLogs UltimusLogs = new UltimusLogs("AtencionTramiteAseController");
+        UltimusLogs UltimusLogs = new UltimusLogs("GenerarCartaController");
 
         public ActionResult Index()
         {
@@ -49,7 +49,7 @@ namespace AtencionTramites.Controllers
             return ret;
         }
 
-        public ActionResult Radicado()
+        public ActionResult GenerarCarta()
         {
             InitControllers();
 
@@ -57,13 +57,6 @@ namespace AtencionTramites.Controllers
         }
 
         public ActionResult Seguimiento()
-        {
-            InitControllers();
-
-            return View();
-        }
-
-        public ActionResult GenerarCarta()
         {
             InitControllers();
 

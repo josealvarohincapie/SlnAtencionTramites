@@ -658,6 +658,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\GenerarCartaController.cs" />
     <Compile Include="Controllers\ClasificacionTramitesController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\AtencionTramiteAseController.cs" />

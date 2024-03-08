@@ -67,13 +67,12 @@ this.getDataModel = function () {
 			$("#txtPeticionarioAT_Direccion").hide();
 		}
 	});
-
-	$("#chkClasificacionPeticionAT_RespuestaEscrita").unbind("click");
-	$("#chkClasificacionPeticionAT_RespuestaEscrita").click(function () {
-		var isChecked = $('#chkClasificacionPeticionAT_RespuestaEscrita').attr('checked') ? true : false;
-
-		if (isChecked) {
-
+	
+	
+	$("#radio_group_ClasificacionPeticionAT_RespuestaEscrita").unbind("change");
+	$("#chkClasificacionPeticionAT_RespuestaEscrita").change(function () {
+		
+		if ($('#radio_ClasificacionPeticionAT_RespuestaEscrita_1').prop('checked')) {
 			$("#lblClasificacionPeticionAT_ConclusionAsesoria").show();
 			$("#txtClasificacionPeticionAT_ConclusionAsesoria").show();
 		} else {

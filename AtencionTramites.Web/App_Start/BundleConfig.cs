@@ -110,6 +110,11 @@ namespace AtencionTramites
                 .Include("~/Ultimus.Framework/ClasificacionTramites/API.Seguimiento.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
+
+            bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesAse/GenerarCarta")
+                .Include("~/Ultimus.Framework/AtencionTramitesAse/API.GenerarCarta.js")
+                .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
+                );
         }
     }
 }
