@@ -1,7 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using AtencionTramites.Model.Classes;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using Ultimus.Interfaces;
 using Ultimus.Interfaces.UltimusForm;
@@ -12,146 +15,323 @@ namespace AtencionTramites.Model.Classes
 {
     public class UltimusUtility
     {
-        public static void SetProperties(object source, object target)
+        public static string SetFormatCurrency(decimal? monto)
         {
-            var customerType = target.GetType();
-            foreach (var prop in source.GetType().GetProperties())
+            if (!monto.HasValue)
             {
-                if (prop != null && prop.CanRead && !prop.Name.Contains("Auditoria"))
-                {
-                    var propGetter = prop.GetGetMethod();
-                    var valueToSet = propGetter.Invoke(source, null);
-                    var prop2 = customerType.GetProperty(prop.Name);
-                    if (prop2 != null && prop2.CanWrite)
-                    {
-                        var propSetter = prop2.GetSetMethod();
-                        propSetter.Invoke(target, new[] { valueToSet });
-                    }
-                }
+                return string.Empty;
             }
+            NumberFormatInfo nfi = Constantes.esPA.NumberFormat;
+            nfi.CurrencyDecimalDigits = 2;
+            return monto.Value.ToString("C", nfi);
         }
 
-        public static string GetValue(object value)
+        public static string ObtenerFechaTipo1(DateTime? date)
         {
-            return GetValue(value, null, null, null);
+            if (!date.HasValue)
+            {
+                return string.Empty;
+            }
+            return string.Format("{0} de {1} de {2}", date.Value.Day, date.Value.ToString("MMMM", Constantes.esPA), date.Value.Year);
         }
 
-        public static string GetValue(object value, string left_symbol, string right_symbol, int? decimals)
+        public static string ObtenerFechaTipo2(DateTime? date)
         {
-            string ret = string.Empty;
-            if (value is bool)
+            if (!date.HasValue)
             {
-                if (Convert.ToBoolean(value))
-                {
-                    ret = "Sí";
-                }
-                else
-                {
-                    ret = "No";
-                }
+                return string.Empty;
             }
-            else if (value is DateTime)
+            return string.Format("a los {0} ({1}) días del mes de {2} de {3} ({4})", NumeroALetras(date.Value.Day), date.Value.Day, date.Value.ToString("MMMM", Constantes.esPA), NumeroALetras(date.Value.Year), date.Value.Year);
+        }
+
+        public static string ObtenerFechaTipo3(DateTime? date)
+        {
+            if (!date.HasValue)
             {
-                ret = string.Format("{0} de {1} de {2}", Convert.ToDateTime(value).Day, Convert.ToDateTime(value).ToString("MMMM", Constantes.esPA), Convert.ToDateTime(value).Year);
+                return string.Empty;
             }
-            else if (value is decimal || value is double)
+            return string.Format("{0} {1} {2}", date.Value.Day, date.Value.ToString("MMMM", Constantes.esPA), date.Value.Year);
+        }
+
+        public static string ObtenerFechaTipo4(DateTime? date)
+        {
+            if (!date.HasValue)
             {
-                string format = "#,##0";
-                if (decimals == null)
+                return string.Empty;
+            }
+            return date.Value.ToString("dd/MMMM/yyyy hh:mm:ss tt", Constantes.esPA);
+        }
+
+        public static string ObtenerFechaTipo5(DateTime? date)
+        {
+            if (!date.HasValue)
+            {
+                return string.Empty;
+            }
+            return string.Format(date.Value.ToString("MMMM dd yyyy, a {0} hh:mm:ss tt", Constantes.esPA), "las");
+        }
+
+        public static double DateDiffMonths(DateTime start, DateTime end)
+        {
+            return (end - start).TotalHours;
+        }
+
+        public static int DateDiffDays(DateTime start, DateTime end, bool onlyBusinessDays)
+        {
+            int ret = 0;
+            if (Convert.ToInt64(start.ToString("yyyyMMdd")) <= Convert.ToInt64(end.ToString("yyyyMMdd")))
+            {
+                DateTime i = start;
+                while (i <= end)
                 {
-                    string[] res = Convert.ToString(value).Split('.');
-                    int precision = 0;
-                    if (res.Length == 2 && res[1].Any(q => q != '0'))
+                    if (onlyBusinessDays)
                     {
-                        precision = res[1].Length;
-                        if (precision > 0)
+                        if (i.DayOfWeek != DayOfWeek.Saturday && i.DayOfWeek != 0)
                         {
-                            format = "#,##0.".PadRight(6 + precision, '0');
+                            ret++;
                         }
                     }
+                    else
+                    {
+                        ret++;
+                    }
+                    i = i.AddDays(1.0);
                 }
-                else
+            }
+            return ret;
+        }
+
+        public static string NumeroALetras(decimal? nro)
+        {
+            if (!nro.HasValue)
+            {
+                return string.Empty;
+            }
+            long entero = Convert.ToInt64(Math.Truncate(nro.Value));
+            int decimales = Convert.ToInt32(Math.Round((nro.Value - (decimal)entero) * 100m, 2));
+            string dec = "";
+            if (decimales > 0)
+            {
+                dec = " CON " + decimales + "/100";
+            }
+            return toText(Convert.ToDouble(entero)) + dec;
+        }
+
+        private static string toText(double value)
+        {
+            string Num2Text = "";
+            value = Math.Truncate(value);
+            if (value == 0.0)
+            {
+                Num2Text = "CERO";
+            }
+            else if (value == 1.0)
+            {
+                Num2Text = "UNO";
+            }
+            else if (value == 2.0)
+            {
+                Num2Text = "DOS";
+            }
+            else if (value == 3.0)
+            {
+                Num2Text = "TRES";
+            }
+            else if (value == 4.0)
+            {
+                Num2Text = "CUATRO";
+            }
+            else if (value == 5.0)
+            {
+                Num2Text = "CINCO";
+            }
+            else if (value == 6.0)
+            {
+                Num2Text = "SEIS";
+            }
+            else if (value == 7.0)
+            {
+                Num2Text = "SIETE";
+            }
+            else if (value == 8.0)
+            {
+                Num2Text = "OCHO";
+            }
+            else if (value == 9.0)
+            {
+                Num2Text = "NUEVE";
+            }
+            else if (value == 10.0)
+            {
+                Num2Text = "DIEZ";
+            }
+            else if (value == 11.0)
+            {
+                Num2Text = "ONCE";
+            }
+            else if (value == 12.0)
+            {
+                Num2Text = "DOCE";
+            }
+            else if (value == 13.0)
+            {
+                Num2Text = "TRECE";
+            }
+            else if (value == 14.0)
+            {
+                Num2Text = "CATORCE";
+            }
+            else if (value == 15.0)
+            {
+                Num2Text = "QUINCE";
+            }
+            else if (value < 20.0)
+            {
+                Num2Text = "DIECI" + toText(value - 10.0);
+            }
+            else if (value == 20.0)
+            {
+                Num2Text = "VEINTE";
+            }
+            else if (value < 30.0)
+            {
+                Num2Text = "VEINTI" + toText(value - 20.0);
+            }
+            else if (value == 30.0)
+            {
+                Num2Text = "TREINTA";
+            }
+            else if (value == 40.0)
+            {
+                Num2Text = "CUARENTA";
+            }
+            else if (value == 50.0)
+            {
+                Num2Text = "CINCUENTA";
+            }
+            else if (value == 60.0)
+            {
+                Num2Text = "SESENTA";
+            }
+            else if (value == 70.0)
+            {
+                Num2Text = "SETENTA";
+            }
+            else if (value == 80.0)
+            {
+                Num2Text = "OCHENTA";
+            }
+            else if (value == 90.0)
+            {
+                Num2Text = "NOVENTA";
+            }
+            else if (value < 100.0)
+            {
+                Num2Text = toText(Math.Truncate(value / 10.0) * 10.0) + " Y " + toText(value % 10.0);
+            }
+            else if (value == 100.0)
+            {
+                Num2Text = "CIEN";
+            }
+            else if (value < 200.0)
+            {
+                Num2Text = "CIENTO " + toText(value - 100.0);
+            }
+            else if (value == 200.0 || value == 300.0 || value == 400.0 || value == 600.0 || value == 800.0)
+            {
+                Num2Text = toText(Math.Truncate(value / 100.0)) + "CIENTOS";
+            }
+            else if (value == 500.0)
+            {
+                Num2Text = "QUINIENTOS";
+            }
+            else if (value == 700.0)
+            {
+                Num2Text = "SETECIENTOS";
+            }
+            else if (value == 900.0)
+            {
+                Num2Text = "NOVECIENTOS";
+            }
+            else if (value < 1000.0)
+            {
+                Num2Text = toText(Math.Truncate(value / 100.0) * 100.0) + " " + toText(value % 100.0);
+            }
+            else if (value == 1000.0)
+            {
+                Num2Text = "MIL";
+            }
+            else if (value < 2000.0)
+            {
+                Num2Text = "MIL " + toText(value % 1000.0);
+            }
+            else if (value < 1000000.0)
+            {
+                Num2Text = toText(Math.Truncate(value / 1000.0)) + " MIL";
+                if (value % 1000.0 > 0.0)
                 {
-                    format = "#,##0.".PadRight(6 + decimals.Value, '0');
+                    Num2Text = Num2Text + " " + toText(value % 1000.0);
                 }
-                ret = Convert.ToDecimal(value).ToString(format);
+            }
+            else if (value == 1000000.0)
+            {
+                Num2Text = "UN MILLON";
+            }
+            else if (value < 2000000.0)
+            {
+                Num2Text = "UN MILLON " + toText(value % 1000000.0);
+            }
+            else if (value < 1000000000000.0)
+            {
+                Num2Text = toText(Math.Truncate(value / 1000000.0)) + " MILLONES ";
+                if (value - Math.Truncate(value / 1000000.0) * 1000000.0 > 0.0)
+                {
+                    Num2Text = Num2Text + " " + toText(value - Math.Truncate(value / 1000000.0) * 1000000.0);
+                }
+            }
+            else if (value == 1000000000000.0)
+            {
+                Num2Text = "UN BILLON";
+            }
+            else if (value < 2000000000000.0)
+            {
+                Num2Text = "UN BILLON " + toText(value - Math.Truncate(value / 1000000000000.0) * 1000000000000.0);
             }
             else
             {
-                ret = Convert.ToString(value);
+                Num2Text = toText(Math.Truncate(value / 1000000000000.0)) + " BILLONES";
+                if (value - Math.Truncate(value / 1000000000000.0) * 1000000000000.0 > 0.0)
+                {
+                    Num2Text = Num2Text + " " + toText(value - Math.Truncate(value / 1000000000000.0) * 1000000000000.0);
+                }
             }
-            if (!string.IsNullOrEmpty(ret))
+            return Num2Text;
+        }
+
+        public static string ObtenerNumeroRadicado(string SiglaEntidad, string SiglaCorrespondencia, DateTime Fecha, string CodigoDependencia, int Secuencial)
+        {
+            return Fecha.ToString("yyyy") + CodigoDependencia.PadLeft(6, '0') + Convert.ToString(Secuencial).PadLeft(5, '0') + SiglaCorrespondencia;
+        }
+
+        public static string ObtenerNumeroRadicadoDepartamental(DateTime Fecha, int SecuencialDepartamental)
+        {
+            return Fecha.ToString("yyyyMMdd") + "-" + Convert.ToString(SecuencialDepartamental).PadLeft(9, '0');
+        }
+
+        public static string GenerarClaveSHA1(string cadena)
+        {
+            byte[] data = new UTF8Encoding().GetBytes(cadena);
+            byte[] result = new SHA1CryptoServiceProvider().ComputeHash(data);
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < result.Length; i++)
             {
-                if (!string.IsNullOrEmpty(left_symbol) && !string.IsNullOrEmpty(right_symbol))
+                if (result[i] < 16)
                 {
-                    ret = string.Format("{0} {1} {2}", left_symbol, ret, right_symbol);
+                    sb.Append("0");
                 }
-                else if (!string.IsNullOrEmpty(left_symbol))
-                {
-                    ret = string.Format("{0} {1}", left_symbol, ret);
-                }
-                else if (!string.IsNullOrEmpty(right_symbol))
-                {
-                    ret = string.Format("{0} {1}", ret, right_symbol);
-                }
+                sb.Append(result[i].ToString("x"));
             }
-            return ret;
-        }
-
-        public static int YearsDiff(DateTime start, DateTime end)
-        {
-            int ret = 0;
-            if (end > start)
-            {
-                DateTime zeroTime = new DateTime(1, 1, 1);
-                TimeSpan span = end - start;
-                ret = (zeroTime + span).Year - 1;
-            }
-            return ret;
-        }
-
-        public static string ObtenerEmail(string Id)
-        {
-            string ret = string.Empty;
-            using (UltimusIntegrationAPIController UltimusIntegrationAPIController = new UltimusIntegrationAPIController())
-            {
-                UltimusUser UltimusUser = UltimusIntegrationAPIController.GetUserInformation(Id);
-                if (UltimusUser != null)
-                {
-                    ret = UltimusUser.EmailAddress;
-                }
-            }
-            return ret;
-        }
-
-        public static List<StepFormsList> ObtenerFormularios(UltimusIncident Tarea, string QueryString)
-        {
-            return ObtenerFormularios(Tarea.Process, Tarea.Step, QueryString);
-        }
-
-        public static List<StepFormsList> ObtenerFormularios(string Process, string Step, string QueryString)
-        {
-            UltimusFormAPIController UltimusFormAPIController = new UltimusFormAPIController();
-            List<StepFormsList> menu = UltimusFormAPIController.ObtenerFormularios(Process, Step);
-            if (menu != null)
-            {
-                foreach (StepFormsList StepFormsList in menu)
-                {
-                    StringBuilder ret = new StringBuilder();
-                    Crypt crypt = new Crypt();
-                    ret.AppendFormat(StepFormsList.FormPath);
-                    if (QueryString != null)
-                        ret.AppendFormat(QueryString);
-
-                    StepFormsList.FormPath = ret.ToString();
-                }
-            }
-            return menu;
-        }
-
-        public static string Serializar(object obj)
-        {
-            return JsonConvert.SerializeObject(obj);
+            return sb.ToString();
         }
     }
 }

@@ -10,6 +10,88 @@ namespace AtencionTramites.Model.Classes
         public enum CodigoTipoDecision { Avanzar = 1, Rechazar = 2, Devolver = 3 }
         public enum CodigoTipoSolicitud { CartaTrabajo = 1, Vacaciones = 2, Permiso = 3, Herramientas = 4 }
 
+        public static class ClasificacionTramites
+        {
+            public static class Etapas
+            {
+                public static class AnalisisPeticionClasificacion
+                {
+                    public static class Decisiones
+                    {
+                        public static int Decision1 = 1;
+
+                        public static int Decision2 = 2;
+
+                        public static int Decision3 = 3;
+                    }
+
+                    public static string Nombre = "AnalisisPeticionClasificacion";
+                }
+
+                public static class Asesoria
+                {
+                    public static class Decisiones
+                    {
+                        public static int Decision1 = 1;
+
+                        public static int Decision2 = 2;
+
+                        public static int Decision3 = 3;
+                    }
+
+                    public static string Nombre = "Asesoria";
+                }
+
+                public static class Solicitud
+                {
+                    public static class Decisiones
+                    {
+                        public static int Decision1 = 1;
+
+                        public static int Decision2 = 2;
+
+                        public static int Decision3 = 3;
+                    }
+
+                    public static string Nombre = "Solicitud";
+                }
+
+                public static class Queja
+                {
+                    public static class Decisiones
+                    {
+                        public static int Decision1 = 1;
+
+                        public static int Decision2 = 2;
+
+                        public static int Decision3 = 3;
+                    }
+
+                    public static string Nombre = "Queja";
+                }
+
+                public static class Fin
+                {
+                    public static class Decisiones
+                    {
+                        public static int Decision1 = 1;
+
+                        public static int Decision2 = 2;
+
+                        public static int Decision3 = 3;
+                    }
+
+                    public static string Nombre = "Fin";
+                }
+            }
+
+            public static string Sigla = "1";
+
+            public static string Nombre = "AtencionTramiteAse";
+
+            public static string Iniciadores = "AtencionTramiteAse_GenerarCarta";
+        }
+
         public static class AtencionTramiteAse
         {
             public static class Etapas

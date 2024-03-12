@@ -8,6 +8,72 @@ namespace AtencionTramites.Model.ModelAtencionTramites
 
     public partial class Pqrs
     {
+        [NotMapped]
+        public string NombreGenero { get; set; }
+
+        [NotMapped]
+        public string NombreTipoDocumentoIdentificacion { get; set; }
+
+        [NotMapped]
+        public string NombreTipoPqrs { get; set; }
+
+        [NotMapped]
+        public List<PqrsDocumento> PqrsDocumento { get; set; }
+
+        [NotMapped]
+        public string NombreTipoSolicitante { get; set; }
+
+        [NotMapped]
+        public string NombrePais { get; set; }
+
+        [NotMapped]
+        public string NombreDepartamento { get; set; }
+
+        [NotMapped]
+        public string NombreCiudad { get; set; }
+
+        [NotMapped]
+        public string NombreMedioRespuesta { get; set; }
+
+        [NotMapped]
+        public string NombreTipoDireccion { get; set; }
+
+        [NotMapped]
+        public string NombreGrupoEtnico { get; set; }
+
+        [NotMapped]
+        public string NombreSituacionDiscapacidad { get; set; }
+
+        [NotMapped]
+        public string NombreSujetoEspecialProteccion { get; set; }
+
+        [NotMapped]
+        public string NombreNivelEstudios { get; set; }
+
+        [NotMapped]
+        public string NombreEstadoCivil { get; set; }
+
+        [NotMapped]
+        public string NombreSexo { get; set; }
+
+        [NotMapped]
+        public string NombreOrientacionSexual { get; set; }
+
+        [NotMapped]
+        public string NombreProcedencia { get; set; }
+
+        [NotMapped]
+        public string NombreRangoEdad { get; set; }
+
+        [NotMapped]
+        public string NombreTipoTramite { get; set; }
+
+        [NotMapped]
+        public string NombreDepartamentoHechos { get; set; }
+
+        [NotMapped]
+        public string NombreMunicipioHechos { get; set; }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long CodigoSolicitud { get; set; }

@@ -9,6 +9,24 @@ namespace AtencionTramites.Model.ModelAtencionTramites
     [Table("RadicadoInterno")]
     public partial class RadicadoInterno
     {
+        [NotMapped]
+        public string NombreFormato { get; set; }
+
+        [NotMapped]
+        public string NombreTipoOficio { get; set; }
+
+        [NotMapped]
+        public string NombreEstadoTarea { get; set; }
+
+        [NotMapped]
+        public List<RadicadoInternoAdicional> RadicadoInternoAdicional { get; set; }
+
+        [NotMapped]
+        public List<RadicadoInternoDocumento> RadicadoInternoDocumento { get; set; }
+
+        [NotMapped]
+        public bool Descartado { get; set; }
+
         [Key]
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

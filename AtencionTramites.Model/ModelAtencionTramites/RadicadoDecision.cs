@@ -9,6 +9,33 @@ namespace AtencionTramites.Model.ModelAtencionTramites
     [Table("RadicadoDecision")]
     public partial class RadicadoDecision
     {
+        [NotMapped]
+        public string NombreDecision { get; set; }
+
+        [NotMapped]
+        public int? CodigoSecretaria { get; set; }
+
+        [NotMapped]
+        public string NombreSecretaria { get; set; }
+
+        [NotMapped]
+        public int? CodigoArea { get; set; }
+
+        [NotMapped]
+        public string NombreArea { get; set; }
+
+        [NotMapped]
+        public int? CodigoGrupo { get; set; }
+
+        [NotMapped]
+        public string NombreGrupo { get; set; }
+
+        [NotMapped]
+        public int? CodigoFuncionario { get; set; }
+
+        [NotMapped]
+        public string NombreFuncionario { get; set; }
+
         [Key]
         public Guid CodigoRadicadoDecision { get; set; }
 

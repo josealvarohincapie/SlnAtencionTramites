@@ -55,9 +55,8 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\BPMComplementFramework.1.529.0\lib\NLog.dll</HintPath>
@@ -89,6 +88,10 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Ultimus.DataAccessLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ultimus.DataAccessLayer.dll</HintPath>
+    </Reference>
     <Reference Include="Ultimus.Framework, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BPMComplementFramework.1.529.0\lib\Ultimus.Framework.dll</HintPath>
     </Reference>
@@ -100,6 +103,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AtencionTramiteAse.svc" />
+    <Content Include="AtencionTramiteQue.svc" />
+    <Content Include="AtencionTramiteSol.svc" />
+    <Content Include="ClasificacionTramites.svc" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.min.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap4.css" />
@@ -451,7 +458,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtencionTramiteAse.svc.cs">
+      <DependentUpon>AtencionTramiteAse.svc</DependentUpon>
+    </Compile>
+    <Compile Include="AtencionTramiteQue.svc.cs">
+      <DependentUpon>AtencionTramiteQue.svc</DependentUpon>
+    </Compile>
+    <Compile Include="AtencionTramiteSol.svc.cs">
+      <DependentUpon>AtencionTramiteSol.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ClasificacionTramites.svc.cs">
+      <DependentUpon>ClasificacionTramites.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\FirmaElectronicaInterface.cs" />
+    <Compile Include="Classes\Generales.cs" />
     <Compile Include="Classes\UltimusInterface.cs" />
+    <Compile Include="IAtencionTramiteAse.cs" />
+    <Compile Include="IAtencionTramiteQue.cs" />
+    <Compile Include="IAtencionTramiteSol.cs" />
+    <Compile Include="IClasificacionTramites.cs" />
     <Compile Include="ICatalogos.cs" />
     <Compile Include="IDatosFormularios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

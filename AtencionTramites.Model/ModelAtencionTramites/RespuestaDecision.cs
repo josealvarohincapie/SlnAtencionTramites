@@ -9,6 +9,15 @@ namespace AtencionTramites.Model.ModelAtencionTramites
     [Table("RespuestaDecision")]
     public partial class RespuestaDecision
     {
+        [NotMapped]
+        public string NombreDecision { get; set; }
+
+        [NotMapped]
+        public int? CodigoAbogado { get; set; }
+
+        [NotMapped]
+        public string NombreAbogado { get; set; }
+
         [Key]
         public Guid CodigoRespuestaDecision { get; set; }
 

@@ -9,6 +9,69 @@ namespace AtencionTramites.Model.ModelAtencionTramites
     [Table("RadicadoInternoDecision")]
     public partial class RadicadoInternoDecision
     {
+        [NotMapped]
+        public string NombreDecision { get; set; }
+
+        [NotMapped]
+        public int? CodigoSecretaria { get; set; }
+
+        [NotMapped]
+        public string NombreSecretaria { get; set; }
+
+        [NotMapped]
+        public int? CodigoArea { get; set; }
+
+        [NotMapped]
+        public string NombreArea { get; set; }
+
+        [NotMapped]
+        public int? CodigoGrupo { get; set; }
+
+        [NotMapped]
+        public string NombreGrupo { get; set; }
+
+        [NotMapped]
+        public int? CodigoFuncionario { get; set; }
+
+        [NotMapped]
+        public string NombreFuncionario { get; set; }
+
+        [NotMapped]
+        public int? CodigoAbogado { get; set; }
+
+        [NotMapped]
+        public string NombreAbogado { get; set; }
+
+        [NotMapped]
+        public int? CodigoSecretariaRespuesta { get; set; }
+
+        [NotMapped]
+        public string NombreSecretariaRespuesta { get; set; }
+
+        [NotMapped]
+        public int? CodigoAreaRespuesta { get; set; }
+
+        [NotMapped]
+        public string NombreAreaRespuesta { get; set; }
+
+        [NotMapped]
+        public int? CodigoGrupoRespuesta { get; set; }
+
+        [NotMapped]
+        public string NombreGrupoRespuesta { get; set; }
+
+        [NotMapped]
+        public int? CodigoFuncionarioRespuesta { get; set; }
+
+        [NotMapped]
+        public string NombreFuncionarioRespuesta { get; set; }
+
+        [NotMapped]
+        public int? CodigoAbogadoRespuesta { get; set; }
+
+        [NotMapped]
+        public string NombreAbogadoRespuesta { get; set; }
+
         [Key]
         public Guid CodigoRadicadoInternoDecision { get; set; }
 

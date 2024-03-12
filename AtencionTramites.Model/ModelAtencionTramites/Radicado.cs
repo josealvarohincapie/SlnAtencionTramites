@@ -1,5 +1,6 @@
 namespace AtencionTramites.Model.ModelAtencionTramites
 {
+    using AtencionTramites.Model.Classes;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
@@ -14,6 +15,96 @@ namespace AtencionTramites.Model.ModelAtencionTramites
         {
             DerechosClasificacion = new HashSet<DerechosClasificacion>();
         }
+
+        [NotMapped]
+        public string NombreFuente { get; set; }
+
+        [NotMapped]
+        public string NombreGenero { get; set; }
+
+        [NotMapped]
+        public string NombreGrupoEtnico { get; set; }
+
+        [NotMapped]
+        public string NombreSituacionDiscapacidad { get; set; }
+
+        [NotMapped]
+        public string NombreSujetoEspecialProteccion { get; set; }
+
+        [NotMapped]
+        public string NombreTipoDocumentoIdentificacion { get; set; }
+
+        [NotMapped]
+        public string NombreTipoDocumento { get; set; }
+
+        [NotMapped]
+        public string NombreSubTipoDocumento { get; set; }
+
+        [NotMapped]
+        public string NombreEstadoTarea { get; set; }
+
+        [NotMapped]
+        public List<RadicadoAdicional> RadicadoAdicional { get; set; }
+
+        [NotMapped]
+        public List<RadicadoDocumento> RadicadoDocumento { get; set; }
+
+        [NotMapped]
+        public bool Descartado { get; set; }
+
+        [NotMapped]
+        public CorreoFuente CorreoFuente { get; set; }
+
+        [NotMapped]
+        public PqrsFuente PqrsFuente { get; set; }
+
+        [NotMapped]
+        public string NombreTipoTramite { get; set; }
+
+        [NotMapped]
+        public string NombreNivelEstudios { get; set; }
+
+        [NotMapped]
+        public string NombreEstadoCivil { get; set; }
+
+        [NotMapped]
+        public string NombreSexo { get; set; }
+
+        [NotMapped]
+        public string NombreOrientacionSexual { get; set; }
+
+        [NotMapped]
+        public string NombreProcedencia { get; set; }
+
+        [NotMapped]
+        public string NombreRangoEdad { get; set; }
+
+        [NotMapped]
+        public string NombreDepartamentoHechos { get; set; }
+
+        [NotMapped]
+        public string NombreMunicipioHechos { get; set; }
+
+        [NotMapped]
+        public string NombreTipoPqrs { get; set; }
+
+        [NotMapped]
+        public string NombreTipoSolicitante { get; set; }
+
+        [NotMapped]
+        public string NombrePais { get; set; }
+
+        [NotMapped]
+        public string NombreDepartamento { get; set; }
+
+        [NotMapped]
+        public string NombreCiudad { get; set; }
+
+        [NotMapped]
+        public string NombreMedioRespuesta { get; set; }
+
+        [NotMapped]
+        public string NombreFormato { get; set; }
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]

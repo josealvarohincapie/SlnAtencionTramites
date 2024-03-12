@@ -9,6 +9,27 @@ namespace AtencionTramites.Model.ModelAtencionTramites
     [Table("Respuesta")]
     public partial class Respuesta
     {
+        [NotMapped]
+        public string NombreFormato { get; set; }
+
+        [NotMapped]
+        public string NombreEstadoTarea { get; set; }
+
+        [NotMapped]
+        public List<RespuestaAdicional> RespuestaAdicional { get; set; }
+
+        [NotMapped]
+        public List<RespuestaDocumento> RespuestaDocumento { get; set; }
+
+        [NotMapped]
+        public bool Descartado { get; set; }
+
+        [NotMapped]
+        public int? CodigoTipoDocumento { get; set; }
+
+        [NotMapped]
+        public int? CodigoSubTipoDocumento { get; set; }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public long CodigoSolicitud { get; set; }

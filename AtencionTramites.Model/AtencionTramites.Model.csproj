@@ -52,6 +52,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -67,6 +71,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Ultimus.DataAccessLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ultimus.DataAccessLayer.dll</HintPath>
+    </Reference>
     <Reference Include="Ultimus.Framework, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BPMComplementFramework.1.529.0\lib\Ultimus.Framework.dll</HintPath>
     </Reference>
@@ -78,10 +86,77 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AceptaPolitica.cs" />
+    <Compile Include="Classes\AtencionTramiteQue_RadicadoJSON.cs" />
+    <Compile Include="Classes\CatalogoPostJSON.cs" />
+    <Compile Include="Classes\CiudadJSON.cs" />
     <Compile Include="Classes\Constantes.cs" />
-    <Compile Include="Classes\EntidadesJSON.cs" />
+    <Compile Include="Classes\CorreoFuente.cs" />
+    <Compile Include="Classes\ClasificacionTramites_RadicadoJSON.cs" />
+    <Compile Include="Classes\ClasificacionTramites_SeguimientoJSON.cs" />
+    <Compile Include="Classes\AtencionTramiteAse_RadicadoJSON.cs" />
+    <Compile Include="Classes\AtencionTramiteQue_SeguimientoJSON.cs" />
+    <Compile Include="Classes\AtencionTramiteSol_RadicadoJSON.cs" />
+    <Compile Include="Classes\AtencionTramiteAse_SeguimientoJSON.cs" />
+    <Compile Include="Classes\CorrUtilitarios_OrganigramaJSON.cs" />
+    <Compile Include="Classes\CorrUtilitarios_SeguimientoJSON.cs" />
+    <Compile Include="Classes\CorrUtilitarios_ValidarRadicadoJSON.cs" />
+    <Compile Include="Classes\DepartamentoJSON.cs" />
+    <Compile Include="Classes\DEPARTMENTS.cs" />
+    <Compile Include="Classes\EmailCertificadoReq.cs" />
+    <Compile Include="Classes\EmailCertificadoRes.cs" />
+    <Compile Include="Classes\EntidadJSON.cs" />
+    <Compile Include="Classes\FirmaJSON.cs" />
+    <Compile Include="Classes\FirmaRes.cs" />
+    <Compile Include="Classes\GeneraRadicado.cs" />
+    <Compile Include="Classes\IAuthContainerModel.cs" />
+    <Compile Include="Classes\JOBS.cs" />
+    <Compile Include="Classes\JWTContainerModel.cs" />
+    <Compile Include="Classes\NotificacionTareasActivas.cs" />
+    <Compile Include="Classes\NotificacionTareasColas.cs" />
+    <Compile Include="Classes\Organigrama.cs" />
+    <Compile Include="Classes\OrganigramaEntidad.cs" />
+    <Compile Include="Classes\OrganigramaSecretaria.cs" />
+    <Compile Include="Classes\OrganigramaUsuario.cs" />
     <Compile Include="Classes\ParametrosAplicacion.cs" />
+    <Compile Include="Classes\PqrsdJSON.cs" />
+    <Compile Include="Classes\PqrsFuente.cs" />
+    <Compile Include="Classes\PqrsJSON.cs" />
+    <Compile Include="Classes\PqrsUpdateJSON.cs" />
+    <Compile Include="Classes\RadicadoInternoAntecedentes.cs" />
+    <Compile Include="Classes\RadicadoPadre.cs" />
+    <Compile Include="Classes\RadicadoTramite.cs" />
+    <Compile Include="Classes\RangeIfAttribute.cs" />
+    <Compile Include="Classes\RequiredIfAttribute.cs" />
+    <Compile Include="Classes\SecretariaJSON.cs" />
+    <Compile Include="Classes\Seguimiento.cs" />
+    <Compile Include="Classes\SeguimientoDecision.cs" />
+    <Compile Include="Classes\TASKS.cs" />
+    <Compile Include="Classes\TipoSolicitanteJSON.cs" />
+    <Compile Include="Classes\Token.cs" />
     <Compile Include="Classes\UltimusUtility.cs" />
+    <Compile Include="Classes\ValidarRadicado.cs" />
+    <Compile Include="Classes\Variables.cs" />
+    <Compile Include="DAL\EntidadDAL.cs" />
+    <Compile Include="DAL\FormatoDAL.cs" />
+    <Compile Include="DAL\FuncionarioDAL.cs" />
+    <Compile Include="DAL\NotificacionDAL.cs" />
+    <Compile Include="DAL\PqrsDAL.cs" />
+    <Compile Include="DAL\PqrsDocumentoDAL.cs" />
+    <Compile Include="DAL\RadicadoDAL.cs" />
+    <Compile Include="DAL\RadicadoDecisionDAL.cs" />
+    <Compile Include="DAL\RadicadoDocumentoDAL.cs" />
+    <Compile Include="DAL\RadicadoInternoDAL.cs" />
+    <Compile Include="DAL\RadicadoInternoDecisionDAL.cs" />
+    <Compile Include="DAL\RadicadoInternoDocumentoDAL.cs" />
+    <Compile Include="DAL\RespuestaCorreoCertificadoDAL.cs" />
+    <Compile Include="DAL\RespuestaDAL.cs" />
+    <Compile Include="DAL\RespuestaDecisionDAL.cs" />
+    <Compile Include="DAL\SecretariaDAL.cs" />
+    <Compile Include="DAL\TipoDocumentoDAL.cs" />
+    <Compile Include="DAL\TipoNotificacionDAL.cs" />
+    <Compile Include="DAL\TipoSolicitanteDAL.cs" />
+    <Compile Include="DAL\UltimusDAL.cs" />
     <Compile Include="ModelAtencionTramites\AreaDerecho.cs" />
     <Compile Include="ModelAtencionTramites\BIS.cs" />
     <Compile Include="ModelAtencionTramites\Cardinalidad.cs" />
