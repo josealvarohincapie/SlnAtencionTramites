@@ -7,7 +7,6 @@ namespace AtencionTramites.Model.ModelAtencionTramites
 {
     public partial class DbAtencionTramites : DbContext
     {
-
         public virtual DbSet<AreaDerecho> AreaDerecho { get; set; }
         public virtual DbSet<CentroPoblado> CentroPoblado { get; set; }
         public virtual DbSet<Ciudad> Ciudad { get; set; }

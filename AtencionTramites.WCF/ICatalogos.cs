@@ -6,7 +6,6 @@ using Ultimus.Interfaces;
 namespace AtencionTramites.WCF
 {
     [ServiceContract]
-    [CustomContractBehaviorAttribute]
     public interface ICatalogos
     {
         [OperationContract]

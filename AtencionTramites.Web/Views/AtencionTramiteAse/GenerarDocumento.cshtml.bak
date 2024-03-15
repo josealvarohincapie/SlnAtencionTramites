@@ -76,11 +76,11 @@
                         @UltimusHelper.Dynamic("RadicadoEnviadoAT_Nombre")
                         @UltimusHelper.Dynamic("RadicadoEnviadoAT_Cargo")
                         @UltimusHelper.Dynamic("RadicadoEnviadoAT_Ciudad")
-                        @*@UltimusHelper.Dynamic("RadicadoEnviadoAT_Correos")*@
+                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Correos")
                         @UltimusHelper.Dynamic("RadicadoEnviadoAT_Folios")
                         @UltimusHelper.Dynamic("RadicadoEnviadoAT_Anexos")
                         @UltimusHelper.Dynamic("RadicadoEnviadoAT_Asunto")
-                        @*@UltimusHelper.Dynamic("RadicadoEnviadoAT_Orientacion")*@
+                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Orientacion")
 
                     </div>
                 </div>

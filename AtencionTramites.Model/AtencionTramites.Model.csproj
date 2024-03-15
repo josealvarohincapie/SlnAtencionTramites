@@ -118,7 +118,6 @@
     <Compile Include="Classes\OrganigramaEntidad.cs" />
     <Compile Include="Classes\OrganigramaSecretaria.cs" />
     <Compile Include="Classes\OrganigramaUsuario.cs" />
-    <Compile Include="Classes\ParametrosAplicacion.cs" />
     <Compile Include="Classes\PqrsdJSON.cs" />
     <Compile Include="Classes\PqrsFuente.cs" />
     <Compile Include="Classes\PqrsJSON.cs" />

@@ -661,7 +661,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\MvcApplication.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SessionControllerHandler.cs" />
+    <Compile Include="App_Start\SessionRouteHandler.cs" />
+    <Compile Include="App_Start\UnhandledExceptionFilter.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClasificacionTramitesController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
@@ -684,8 +689,8 @@
     <Content Include="Views\AtencionTramiteAse\Seguimiento.cshtml" />
     <Content Include="Views\ClasificacionTramites\Radicado.cshtml" />
     <Content Include="Views\ClasificacionTramites\Seguimiento.cshtml" />
-    <Content Include="Views\ClasificacionTramites\ClasificacionTramite.cshtml" />
     <Content Include="Views\AtencionTramiteAse\GenerarDocumento.cshtml" />
+    <Content Include="Views\ClasificacionTramites\ClasificacionTramite.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

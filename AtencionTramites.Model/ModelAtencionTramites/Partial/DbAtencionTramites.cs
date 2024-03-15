@@ -9,7 +9,7 @@ namespace AtencionTramites.Model.ModelAtencionTramites
         private DbContextTransaction DatabaseTransaction { get; set; }
 
         public DbAtencionTramites()
-            : base(new ParametrosAplicacion().DbAtencionTramites)
+            : base(new Variables().DbAtencionTramites)
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;

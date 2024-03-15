@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="AtencionTramites.WCF.Catalogos" CodeBehind="ClasificacionTramites.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AtencionTramites.WCF.ClasificacionTramites" CodeBehind="ClasificacionTramites.svc.cs" %>

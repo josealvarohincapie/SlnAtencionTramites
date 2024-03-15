@@ -4,13 +4,20 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using Ultimus.Utilitarios;
+using AtencionTramites.Model.Classes;
+using AtencionTramites.Model.ModelAtencionTramites;
+using AtencionTramites.WCF.Classes;
+using Ultimus.Interfaces;
+using System.ServiceModel.Activation;
 
 namespace AtencionTramites.WCF
 {
-    // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "AtencionTramiteSol" en el código, en svc y en el archivo de configuración a la vez.
-    // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione AtencionTramiteSol.svc o AtencionTramiteSol.svc.cs en el Explorador de soluciones e inicie la depuración.
-    public class AtencionTramiteSol : IAtencionTramiteSol
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
+    public partial class AtencionTramiteSol : IAtencionTramiteSol
     {
+        UltimusLogs UltimusLogs = new UltimusLogs("AtencionTramiteSol");
         public void DoWork()
         {
         }

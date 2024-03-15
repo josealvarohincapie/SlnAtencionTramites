@@ -140,7 +140,7 @@
         <li id="liMenu1"><a data-toggle="tab" href="#menu1">Anexos del Radicado recibido</a></li>
         <li id="liMenu2"><a data-toggle="tab" href="#menu2">Registro de peticionarios</a></li>
         <li id="liMenu3"><a data-toggle="tab" href="#menu3">Clasificación de la petición</a></li>
-        <li id="liMenu4"><a data-toggle="tab" href="#menu4">Conclusión de la petición</a></li>
+        <li id="liMenu4"><a data-toggle="tab" href="#menu4">Decisión</a></li>
     </ul>
     <div class="tab-content">
         <div id="menu0" class="tab-pane fade in active">

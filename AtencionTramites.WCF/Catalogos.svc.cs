@@ -2,14 +2,18 @@
 using AtencionTramites.Model.ModelAtencionTramites;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
+using System.ServiceModel;
+using System.ServiceModel.Activation;
 using Ultimus.Interfaces;
 using Ultimus.Utilitarios;
 
 namespace AtencionTramites.WCF
 {
-    public partial class Catalogos : ICatalogos
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
+
+    public class Catalogos : ICatalogos
     {
         private UltimusLogs UltimusLogs = new UltimusLogs("Catalogos");
 
@@ -48,9 +52,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (CentroPoblado ele in from q in db.CentroPoblado.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                                  where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                                  orderby q.Nombre
+                                                  select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -75,9 +79,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (ExpresionGenero ele in from q in db.ExpresionGenero.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                                    where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                                    orderby q.Nombre
+                                                    select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -102,9 +106,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (Grupo ele in from q in db.Grupo.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                          orderby q.Nombre
+                                          select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -129,9 +133,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (SubGrupo ele in from q in db.SubGrupo.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                             where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                             orderby q.Nombre
+                                             select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -156,9 +160,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (Comunidad ele in from q in db.Comunidad.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                              where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                              orderby q.Nombre
+                                              select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -183,9 +187,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (ConclusionAsesoria ele in from q in db.ConclusionAsesoria.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                                       where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                                       orderby q.Nombre
+                                                       select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -210,9 +214,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (AreaDerecho ele in from q in db.AreaDerecho.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                                where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                                orderby q.Nombre
+                                                select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -237,9 +241,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (Derecho ele in from q in db.Derecho.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                            where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                            orderby q.Nombre
+                                            select q)
                     {
                         ret.Add(new JsonCatalogos
                         {
@@ -264,9 +268,9 @@ namespace AtencionTramites.WCF
                 using (DbAtencionTramites db = new DbAtencionTramites())
                 {
                     foreach (TipoPeticion ele in from q in db.TipoPeticion.AsNoTracking()
-                                                          where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
-                                                          orderby q.Nombre
-                                                          select q)
+                                                 where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                                 orderby q.Nombre
+                                                 select q)
                     {
                         ret.Add(new JsonCatalogos
                         {

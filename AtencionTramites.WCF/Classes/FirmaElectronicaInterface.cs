@@ -7,7 +7,7 @@ using System.Web;
 using AtencionTramites.Model.Classes;
 using Newtonsoft.Json;
 
-namespace Correspondencia.WCF.Classes
+namespace AtencionTramites.WCF.Classes
 {
 	public class FirmaElectronicaInterface
 	{
