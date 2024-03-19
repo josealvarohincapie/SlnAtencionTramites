@@ -668,9 +668,11 @@
     <Compile Include="App_Start\SessionRouteHandler.cs" />
     <Compile Include="App_Start\UnhandledExceptionFilter.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AtencionTramiteSolController.cs" />
     <Compile Include="Controllers\ClasificacionTramitesController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\AtencionTramiteAseController.cs" />
+    <Compile Include="Controllers\GenerarCartaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -691,6 +693,18 @@
     <Content Include="Views\ClasificacionTramites\Seguimiento.cshtml" />
     <Content Include="Views\AtencionTramiteAse\GenerarDocumento.cshtml" />
     <Content Include="Views\ClasificacionTramites\ClasificacionTramite.cshtml" />
+    <Content Include="Views\AtencionTramiteAse\Aprobar.cshtml" />
+    <Content Include="Views\AtencionTramiteAse\Archivar.cshtml" />
+    <Content Include="Views\AtencionTramiteAse\RevisionVistoBueno.cshtml" />
+    <Content Include="Views\AtencionTramiteAse\Verificar.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\EtapaAprobar.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\EtapaArchivar.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\EtapaVerificar.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\GenerarDocumento.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\GestionPeticion.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\RevisionVistoBueno.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\Seguimiento.cshtml" />
+    <Content Include="Views\AtencionTramiteSol\SeguimientoPeticion.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
