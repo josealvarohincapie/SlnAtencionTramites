@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Titulo</title>
+    @if (ViewBag.TemaCSS != null && ViewBag.TemaCSS.IECompatibilty != null)
+    {
+        <meta http-equiv="X-UA-Compatible" content="@ViewBag.TemaCSS.IECompatibilty">
+    }
+    else
+    {
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/tether")
+    @Styles.Render("~/Content/dashboard")
+    @Styles.Render("~/Content/awesome")
+    @Styles.Render("~/Content/toastr")
+    @Styles.Render("~/Content/jquery-dataTables")
+    <link href="~/Scripts/summernote/summernote.css" rel="stylesheet" />
+    <style type="text/css">
+        @if (ViewBag.TemaCSS != null)
+        {
+            @Html.Raw(string.Format(":root {{--MenuColor: {0}; --BackgroundColor: {1}; --FontColor: {2};}}", ViewBag.TemaCSS.MenuColor, ViewBag.TemaCSS.BackgroundColor, ViewBag.TemaCSS.FontColor));
+        }
+    </style>
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <div id="toast-container" class="toast-top-right"></div>
+    @{ @Html.Raw(new ResourceTrasform().GetTemplateHTML()); }
+
+    @UltimusHelper.Modal()
+    @RenderSection("Modals", required: false)
+
+    @UltimusHelper.Button("Seleccionar", "btn btn-default btn-xs", "fa fa-check", "", true)
+
+    <div id="frmHeader" class="scroll-header">
+        <div class="BaseHeader" id="divHeader" style="">
+            @if (ViewBag.CheckLicense != null && !string.IsNullOrEmpty(ViewBag.TaskId) && ((Ultimus.Interfaces.UltimusForm.ULALicenseJSON)ViewBag.CheckLicense).CodigoRespuesta == Ultimus.Interfaces.TipoCodigoRespuesta.ADVERTENCIA.ToString())
+            {
+                <div class="row">
+                    <div class="col-xs-12  col-md-12 col-lg-12  no-horizontal-padding ">
+                        <div class="alert-warning text-center" role="alert" style="padding:1px">
+                            <h4><i class="fa fa-warning"></i> <strong>Advertencia!</strong> @(((Ultimus.Interfaces.UltimusForm.ULALicenseJSON)ViewBag.CheckLicense).DescripcionRespuesta)</h4>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="row ">
+                <div class="col-xs-12 col-sm-6 col-md-3 " style="padding-top:5px; ">
+                    @if (ViewBag.TemaCSS != null)
+                    {
+                        <img src="@ViewBag.TemaCSS.Logo" />
+                    }
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-9">
+                    <div class="infoUltimus">
+                        @if (ViewBag.TemaCSS == null || ViewBag.TemaCSS.HideRequestCode != true)
+                        {
+                            <span><strong>Solicitud:</strong> @ViewBag.CodigoSolicitud |</span>
+                        }
+                        @if (ViewBag.TemaCSS == null || ViewBag.TemaCSS.HideIncident != true)
+                        {
+                            <span><strong>Incidente:</strong> @ViewBag.Incident |</span>
+                        }
+                        <span><strong>Fecha:</strong> @DateTime.Now.ToString("dd-MMMM-yyyy", new System.Globalization.CultureInfo("es-PA"))</span>
+                        <br />
+                        <span><strong>Proceso:</strong> @ViewBag.Process |</span>
+                        <span><strong>Etapa:</strong> @ViewBag.Step |</span>
+                        <span><strong>Usuario:</strong> @ViewBag.UserFullName </span>
+                        @if (Request.IsLocal)
+                        {
+                            <span class="label label-warning"><strong>Local</strong>  </span>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class=" col-xs-12 col-md-12 col-lg-12">
+                    @RenderSection("ExtraInfoHeader", required: false)
+                </div>
+            </div>
+            <div class="row MenuBar" id="divMenuBar">
+                <div class=" col-xs-12 col-md-12 col-lg-12 ">
+                    @if (ViewBag.Menu != null)
+                    {
+                        <div class="MenuBarContent navbar-collapse" id="bs-example-navbar-collapse-6" style="border-top:0px;">
+                            <ul class="nav navbar-nav" id="TabsMenuBar" style="float:left; margin:0;">
+                                @{int IndexTab = 0;}
+                                @foreach (var items in ViewBag.Menu)
+                                {
+                                    if (items.FormName == ViewBag.CurrentTab || string.Concat(Request.ApplicationPath, "/", items.FormFile) == Request.Url.AbsolutePath)
+                                    {
+                                        <li id="@string.Concat("MenuBarTab", IndexTab)" class="active" style="float:left;">
+                                            <a class="nav-active">
+                                                <i class="fa fa-circle-o"></i>&nbsp;@items.FormName
+                                            </a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li id="@string.Concat("MenuBarTab", IndexTab)" style="float:left;">
+                                            <a href="@items.FormPath" onclick="">
+                                                <i class="fa fa-circle-o"></i>&nbsp;@items.FormName
+                                            </a>
+                                        </li>
+                                    }
+                                    IndexTab++;
+                                }
+                            </ul>
+                        </div>
+                    }
+                    @RenderSection("MenuTab", required: false)
+                </div>
+            </div>
+        </div>
+
+        <div class="row SubMenuBar">
+            <div class=" col-xs-12 col-md-12 col-lg-12">
+                <button type="button" class="btn btn-default" id="btnHeaderToggle">
+                    <strong><i class="fa fa-chevron-circle-up"></i></strong>
+                </button>
+                @RenderSection("ButtonOption", required: false)
+            </div>
+        </div>
+    </div>
+
+    <div id="frmBody" class="row">
+        @{ string class_body = "col-xs-12 col-md-12 col-lg-12  ";}
+        <div class="@class_body">
+            <div class="starter-template " id="divStarterTemplate2">
+                <div id="body" class="l-main">
+                    <div id="inner_body" class="l-wrapper">
+                        <noscript>
+                            <div class="alert alert-danger" role="alert">
+                                <h3>Javascript Deshabilitado</h3>
+                                Hemos Detectado que su web browser (explorador de Internet) tiene el Javascript deshabilitado. Este Producto funciona con web browsers compatibles con Javascript.
+                                Por favor contactase con sus administrador de sistemas para la habilitación del mismo.
+                            </div>
+                        </noscript>
+                        @RenderSection("featured", required: false)
+                        @RenderBody()
+                    </div>
+                    <footer class="l-footer">
+                        <div class="block-copyright"><p>Copyright © Dacartec @DateTime.Now.Year. Todos los derechos reservados.</p></div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" id="hiddenTaskId" value="@ViewBag.TaskId" />
+    <input type="hidden" id="hiddenUserID" value="@ViewBag.UserID" />
+    <input type="hidden" id="hiddenProcess" value="@ViewBag.Process" />
+    <input type="hidden" id="hiddenStep" value="@ViewBag.Step" />
+    <input type="hidden" id="hiddenIncident" value="@ViewBag.Incident" />
+    <input type="hidden" id="hiddenTaskStatus" value="@ViewBag.TaskStatus" />
+    <input type="hidden" id="hiddenIpAdress" value="@ViewBag.IpAdress" />
+    <input type="hidden" id="hiddenMachineName" value="@ViewBag.MachineName" />
+    <input type="hidden" id="hiddenActivityType" value="@ViewBag.ActivityType" />
+    <input type="hidden" id="hiddenHostResponse" value="@ViewBag.HostResponse" />
+    <input type="hidden" id="hiddenBrowserName" value="@ViewBag.BrowserName" />
+    <input type="hidden" id="hiddenBrowserVersion" value="@ViewBag.BrowserVersion" />
+    <input type="hidden" id="hiddenJobFunction" value="@ViewBag.JobFunction" />
+    <input type="hidden" id="hiddenUserFullName" value="@ViewBag.UserFullName" />
+    <input type="hidden" id="hiddenUserEmail" value="@ViewBag.UserEmail" />
+    <input type="hidden" id="hiddenSupervisor" value="@ViewBag.Supervisor" />
+    <input type="hidden" id="hiddenSupervisorFullName" value="@ViewBag.SupervisorFullName" />
+    <input type="hidden" id="hiddenVersion" value="@ViewBag.Version" />
+    <input type="hidden" id="hiddenStartTime" value="@ViewBag.StartTime" />
+    <input type="hidden" id="hiddenQueryEncripted" value="@ViewBag.QueryEncripted" />
+    <input type="hidden" id="hiddenCodigoSolicitud" value="@ViewBag.CodigoSolicitud" />
+
+    <!-- INICIO PLANTILLAS -->
+    @UltimusHelper.Button("Seleccionar", "btn btn-default btn-xs", "fa fa-check", "", true)
+    <div id="Opciones" style="display:none;">
+        <span id="btnEditar" style="margin:5px;" class="HandCursor fa-2x fa fa-edit #EditarClass#"></span>
+        <span id="btnRemover" style="margin:5px;" class="HandCursor fa-2x fa fa-trash #EliminarClass#"></span>
+    </div>
+    <form id="frmBotones"></form>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery-migrate")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/tether")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/maskedinput")
+    @Scripts.Render("~/bundles/jquery-dataTables")
+    @Scripts.Render("~/bundles/moment")
+    @Scripts.Render("~/bundles/autoNumeric")
+    @Scripts.Render("~/bundles/FastClick")
+    @Scripts.Render("~/bundles/InputMask")
+    @Scripts.Render("~/bundles/summernote")
+    @Scripts.Render("~/Scripts/Ultimus-Framework")
+    @RenderSection("scripts", required: false)
+    @if (ViewBag.LockDevTools == true)
+    {
+        <script type="text/javascript">LockDevTools();</script>
+    }
+</body>
+</html>

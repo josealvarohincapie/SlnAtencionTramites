@@ -9,6 +9,69 @@
 }
 
 <style>
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .infoUltimus {
+        color: #000000;
+    }
+
+    .MenuBar {
+        background-color: #6699ff;
+    }
+
+    .btn {
+        font-weight: bold !important;
+    }
+
+    .fade.in {
+        opacity: 1;
+    }
+
+    .btn-success {
+        background-color: #5cb85c !important;
+        color: #fff !important;
+        border-color: #4cae4c !important;
+    }
+
+    .btn-sm {
+        padding: 5px 10px 5px 5px !important;
+        font-size: 13px !important;
+    }
+
+    .btn-sm {
+        padding: 5px 10px 5px 5px !important;
+        font-size: 13px !important;
+    }
+
+    .columna {
+        flex-grow: 1; /* Hace que las columnas ocupen el espacio disponible */
+        flex: 1; /* Hace que cada columna ocupe un espacio igual */
+        padding: 10px; /* Añade un poco de espacio alrededor del contenido de cada columna */
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        place-items: center;
+    }
+
+    .HeaderToggle {
+        background-color: #6699ff;
+    }
+
+    .BaseHeader {
+        background-color: #ffffff !important;
+    }
+
     .myNav .nav-pills > li.active > a {
         background-color: #04A29C !important;
         color: white !important;
@@ -51,50 +114,109 @@
     #frmRadicadoDocumento .active {
         display: block;
     }
+
+
+
+
+    #frmRadicadoEnviado .tab-pane {
+        display: none;
+    }
+
+    #frmRadicadoEnviado .active {
+        display: block;
+    }
+
+    #frmAnexosRadicado .tab-pane {
+        display: none;
+    }
+
+    #frmAnexosRadicado .active {
+        display: block;
+    }
+
+    #frmRegistroPeticionarios .tab-pane {
+        display: none;
+    }
+
+    #frmRegistroPeticionarios .active {
+        display: block;
+    }
+
+    #frmDecision .tab-pane {
+        display: none;
+    }
+
+    #frmDecision .active {
+        display: block;
+    }
 </style>
 
 
 <div id="divRespuesta" class="myNav">
     <ul class="nav nav-pills nav-justified">
-        <li class="active"><a data-toggle="tab" href="#menu0">Radicado Enviado</a></li>
-        <li id="liRecibido"><a data-toggle="tab" href="#menu1">Radicado Recibido</a></li>
-        <li><a data-toggle="tab" href="#menu2">Anexos</a></li>
-        <li><a data-toggle="tab" href="#menu3">Decisión</a></li>
+        <li id="liMenu0" class="active">
+            <a data-toggle="tab" href="#menu0">Radicado Enviado</a>
+        </li>
+        <!--
+        <li id="liMenu1"><a data-toggle="tab" href="#menu1">Radicado Recibido</a></li>
+        <li id="liMenu2"><a data-toggle="tab" href="#menu2">Anexos</a></li>  -->
+        <li id="liMenu3"><a data-toggle="tab" href="#menu3">Decisión</a></li>
     </ul>
     <div class="tab-content">
         <div id="menu0" class="tab-pane fade in active">
             <form id="frmRadicadoEnviado">
-                <h3 class="TituloAcordeon"><i class="fa fa-chevron-circle-down"></i>&nbsp;Radicado Enviado</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_NumeroRadicado")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Fecha")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Entidad")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Dependencia")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Formato")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Calificativo")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Nombre")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Cargo")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Ciudad")
-                        @*@UltimusHelper.Dynamic("RadicadoEnviadoAT_Correos")*@
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Folios")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Anexos")
-                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Asunto")
-                        @*@UltimusHelper.Dynamic("RadicadoEnviadoAT_Orientacion")*@
-
+                <h3 class="TituloAcordeon">
+                    <a data-toggle="collapse" href="#divCollapse0" style="color: black; text-decoration: none;">
+                        <i class="fa fa-chevron-circle-down"></i>
+                        &nbsp;Radicado Enviado
+                    </a>
+                </h3>
+                <div id="divCollapse0" class="panel-collapse collapse in">
+                    <div class="contenedor">
+                        <div class="columna">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_NumeroRadicado")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Fecha")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Entidad")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Dependencia")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Formato")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Calificativo")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Nombre")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Cargo")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Ciudad")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Correo")
+                                    <div class="text-right">
+                                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_RespuestaAdicional")
+                                    </div>
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Folios")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Anexos")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_EsUrgente")
+                                    @UltimusHelper.Dynamic("RadicadoEnviadoAT_Asunto")
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="row">
+                                <div class="col-md-6">
+                                        <h3>Cuerpo</h3>
+                                        @UltimusHelper.Dynamic("RadicadoEnviadoAT_Orientacion")
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
-        <div id="menu1" class="tab-pane fade">
+        <div id="menu3" class="tab-pane fade">
             <form id="frmDecision">
                 <h3 class="TituloAcordeon">
-                    <a data-toggle="collapse" href="#divCollapse1" style="color: black; text-decoration: none;">
+                    <a data-toggle="collapse" href="#divCollapse3" style="color: black; text-decoration: none;">
                         <i class="fa fa-chevron-circle-down"></i>
                         &nbsp;Decisión
                     </a>
                 </h3>
-                <div id="divCollapse4" class="panel-collapse collapse in">
+                <div id="divCollapse3" class="panel-collapse collapse in">
                     <div class="row">
                         <div class="col-md-6">
                             @UltimusHelper.Dynamic("RespuestaDecision_Comentarios")
@@ -108,7 +230,51 @@
     </div>
 </div>
 
-
+@section Modals{
+    <div class="modal fade" id="modalRespuestaAdicional" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" style="display: none;">
+        <div class="modal-dialog modal-lg" style="width:80%; height:650px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmRespuestaAdicional">
+                        <div class="row">
+                            <div class="col-md-12">
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_SolicitudOriginal")
+                            </div>
+                            <div class="col-md-6">
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_Calificativo")
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_Nombre")
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_Cargo")
+                            </div>
+                            <div class="col-md-6">
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_Entidad")
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_Ciudad")
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_Correo")
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-right">
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_Agregar")
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                @UltimusHelper.Dynamic("RespuestaAdicionalAT_RespuestaAdicionalList")
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">
+                        <strong>&nbsp;<i class="fa fa-reply"></i>&nbsp;Cerrar</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 @section scripts{
     @Scripts.Render("~/Scripts/AtencionTramitesAse/GenerarDocumento")

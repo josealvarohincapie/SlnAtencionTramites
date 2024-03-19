@@ -1,0 +1,145 @@
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Newtonsoft.Json.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\NLog.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Web.Http.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Framework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Interfaces.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Utilitarios.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Newtonsoft.Json.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Web.Http.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csprojAssemblyReference.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CoreCompileInputs.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CopyComplete
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Newtonsoft.Json.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\NLog.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Web.Http.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Framework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Interfaces.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Utilitarios.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Newtonsoft.Json.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Web.Http.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.AssemblyReference.cache
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CoreCompileInputs.cache
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CopyComplete
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\bin\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\bin\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.WCF.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\bin\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.WCF\obj\Debug\SolicitudesInternas.WCF.pdb

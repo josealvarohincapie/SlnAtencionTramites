@@ -56,23 +56,23 @@ namespace AtencionTramites
                 .Include("~/Scripts/jquery.inputmask/inputmask.regex.extensions.min.js")
                 .Include("~/Scripts/jquery.inputmask/inputmask.date.extensions.min.js"));
             bundles.Add(new ScriptBundle("~/bundles/summernote").Include("~/Scripts/summernote/summernote.min.js", "~/Scripts/summernote/lang/summernote-es-ES.js"));
-            bundles.Add(new ScriptBundle("~/Scripts/Ultimus-Generic").Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js"));
-
             bundles.Add(new ScriptBundle("~/Scripts/ClasificacionTramites/ClasificacionTramite")
                 .Include("~/Ultimus.Framework/ClasificacionTramites/API.ClasificacionTramite.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
-
             bundles.Add(new ScriptBundle("~/Scripts/ClasificacionTramites/Seguimiento")
                 .Include("~/Ultimus.Framework/ClasificacionTramites/API.Seguimiento.js")
+                .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
 
             bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesAse/GenerarDocumento")
                 .Include("~/Ultimus.Framework/AtencionTramitesAse/API.GenerarDocumento.js")
+                .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
 
             bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesAse/Seguimiento")
                 .Include("~/Ultimus.Framework/AtencionTramitesAse/API.Seguimiento.js")
+                .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
         }
     }

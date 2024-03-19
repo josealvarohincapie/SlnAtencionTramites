@@ -1,0 +1,245 @@
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Antlr3.Runtime.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Newtonsoft.Json.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\NLog.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Helpers.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Mvc.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Optimization.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Razor.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Framework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Interfaces.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Utilitarios.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\WebGrease.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Antlr3.Runtime.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Newtonsoft.Json.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Helpers.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Mvc.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Optimization.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Razor.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csprojAssemblyReference.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CoreCompileInputs.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CopyComplete
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Antlr3.Runtime.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Newtonsoft.Json.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\NLog.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Helpers.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Mvc.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Optimization.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Razor.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Framework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Interfaces.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Utilitarios.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\WebGrease.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Antlr3.Runtime.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Newtonsoft.Json.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Helpers.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Mvc.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Optimization.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Razor.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.AssemblyReference.cache
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CoreCompileInputs.cache
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CopyComplete
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Antlr3.Runtime.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Helpers.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Mvc.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Optimization.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Razor.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\WebGrease.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Antlr3.Runtime.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Helpers.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Mvc.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Optimization.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.Razor.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Antlr3.Runtime.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Helpers.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Mvc.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Optimization.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Razor.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.WebPages.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\WebGrease.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Antlr3.Runtime.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Helpers.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Mvc.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Optimization.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.Razor.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.WebPages.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.Web.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Antlr3.Runtime.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Helpers.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Mvc.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Optimization.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Razor.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.WebPages.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\WebGrease.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Antlr3.Runtime.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Helpers.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Http.WebHost.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Mvc.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Optimization.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.Razor.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.WebPages.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\bin\System.Web.WebPages.Razor.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Web\obj\Debug\SolicitudesInternas.Web.pdb

@@ -31,5 +31,33 @@ namespace AtencionTramites.Controllers
 
             return View();
         }
+
+        public ActionResult RevisionVistoBueno()
+        {
+            InitControllers();
+
+            return View();
+        }
+
+        public ActionResult Aprobar()
+        {
+            InitControllers();
+
+            return View();
+        }
+
+        public ActionResult Verificar()
+        {
+            InitControllers();
+
+            return View();
+        }
+
+        public ActionResult Archivar()
+        {
+            InitControllers();
+
+            return View();
+        }
     }
 }

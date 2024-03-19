@@ -25,7 +25,9 @@ namespace AtencionTramites.Model.Classes
 
 		public string DbUltimusOC => new ObtieneParametros(RegeditKey).GetValueKeyRegedit("DbUltimusOC", Decrypt: true);
 
-		public string CorrExtRecibida_NombreProceso => new ObtieneParametros(RegeditKey).GetValueKeyRegedit("CorrExtRecibida_NombreProceso", Decrypt: false);
+        public string ClasificacionTramites_NombreProceso => new ObtieneParametros(RegeditKey).GetValueKeyRegedit("ClasificacionTramites_NombreProceso", Decrypt: false);
+
+        public string CorrExtRecibida_NombreProceso => new ObtieneParametros(RegeditKey).GetValueKeyRegedit("CorrExtRecibida_NombreProceso", Decrypt: false);
 
 		public string CorrExtRecibida_InitiateUserID => new ObtieneParametros(RegeditKey).GetValueKeyRegedit("CorrExtRecibida_InitiateUserID", Decrypt: false);
 

@@ -1,0 +1,113 @@
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\NLog.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Web.Http.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Framework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Interfaces.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Utilitarios.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Web.Http.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csprojAssemblyReference.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CoreCompileInputs.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CopyComplete
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CoreCompileInputs.cache
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\NLog.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Web.Http.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Framework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Interfaces.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Utilitarios.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Web.Http.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\bin\Debug\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\bin\Debug\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\System.Web.Http.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\System.Net.Http.Formatting.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\bin\Debug\System.Web.Http.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.Model\obj\Debug\SolicitudesInternas.Model.csproj.AssemblyReference.cache

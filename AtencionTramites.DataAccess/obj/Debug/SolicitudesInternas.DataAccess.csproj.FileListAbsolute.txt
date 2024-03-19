@@ -1,0 +1,110 @@
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\NLog.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Framework.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Interfaces.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Utilitarios.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csprojAssemblyReference.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CoreCompileInputs.cache
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CopyComplete
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.dll
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.pdb
+C:\VS\ULATFS\ULA\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\NLog.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Framework.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Interfaces.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Utilitarios.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Microsoft.Web.Administration.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.AssemblyReference.cache
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CopyComplete
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.dll
+C:\Users\emmep\Desktop\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas - Copy\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.DataAccess.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\NLog.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Framework.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Interfaces.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\Ultimus.Utilitarios.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\Microsoft.Web.Administration.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.pdb
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\SolicitudesInternas.Model.dll.config
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\bin\Debug\Newtonsoft.Json.xml
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.AssemblyReference.cache
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CoreCompileInputs.cache
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.csproj.CopyComplete
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.dll
+C:\Capacitacion\SlnSolicitudesInternas_Empty\SolicitudesInternas.DataAccess\obj\Debug\SolicitudesInternas.DataAccess.pdb

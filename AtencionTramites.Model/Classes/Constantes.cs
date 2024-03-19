@@ -96,7 +96,7 @@ namespace AtencionTramites.Model.Classes
         {
             public static class Etapas
             {
-                public static class GenerarCarta
+                public static class GenerarDocumento
                 {
                     public static class Decisiones
                     {
@@ -107,7 +107,7 @@ namespace AtencionTramites.Model.Classes
                         public static int Decision3 = 3;
                     }
 
-                    public static string Nombre = "GenerarCarta";
+                    public static string Nombre = "GenerarDocumento";
                 }
 
                 public static class RealizarRevisionPreliminar

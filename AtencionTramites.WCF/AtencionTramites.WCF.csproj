@@ -63,9 +63,24 @@
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
@@ -275,158 +290,6 @@
     <Content Include="Content\DataTables\css\semanticui.scss" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
-    <None Include="Scripts\jquery-1.7-vsdoc.js" />
-    <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
-    <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
-    <Content Include="Scripts\DataTables\autoFill.bootstrap4.js" />
-    <Content Include="Scripts\DataTables\autoFill.bootstrap4.min.js" />
-    <Content Include="Scripts\DataTables\autoFill.foundation.js" />
-    <Content Include="Scripts\DataTables\autoFill.foundation.min.js" />
-    <Content Include="Scripts\DataTables\autoFill.jqueryui.js" />
-    <Content Include="Scripts\DataTables\autoFill.jqueryui.min.js" />
-    <Content Include="Scripts\DataTables\autoFill.semanticui.js" />
-    <Content Include="Scripts\DataTables\autoFill.semanticui.min.js" />
-    <Content Include="Scripts\DataTables\buttons.bootstrap.js" />
-    <Content Include="Scripts\DataTables\buttons.bootstrap.min.js" />
-    <Content Include="Scripts\DataTables\buttons.bootstrap4.js" />
-    <Content Include="Scripts\DataTables\buttons.bootstrap4.min.js" />
-    <Content Include="Scripts\DataTables\buttons.colVis.js" />
-    <Content Include="Scripts\DataTables\buttons.colVis.min.js" />
-    <Content Include="Scripts\DataTables\buttons.flash.js" />
-    <Content Include="Scripts\DataTables\buttons.flash.min.js" />
-    <Content Include="Scripts\DataTables\buttons.foundation.js" />
-    <Content Include="Scripts\DataTables\buttons.foundation.min.js" />
-    <Content Include="Scripts\DataTables\buttons.html5.js" />
-    <Content Include="Scripts\DataTables\buttons.html5.min.js" />
-    <Content Include="Scripts\DataTables\buttons.jqueryui.js" />
-    <Content Include="Scripts\DataTables\buttons.jqueryui.min.js" />
-    <Content Include="Scripts\DataTables\buttons.print.js" />
-    <Content Include="Scripts\DataTables\buttons.print.min.js" />
-    <Content Include="Scripts\DataTables\buttons.semanticui.js" />
-    <Content Include="Scripts\DataTables\buttons.semanticui.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.autoFill.js" />
-    <Content Include="Scripts\DataTables\dataTables.autoFill.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.bootstrap.js" />
-    <Content Include="Scripts\DataTables\dataTables.bootstrap.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.bootstrap4.js" />
-    <Content Include="Scripts\DataTables\dataTables.bootstrap4.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.buttons.js" />
-    <Content Include="Scripts\DataTables\dataTables.buttons.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.colReorder.js" />
-    <Content Include="Scripts\DataTables\dataTables.colReorder.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.fixedColumns.js" />
-    <Content Include="Scripts\DataTables\dataTables.fixedColumns.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.fixedHeader.js" />
-    <Content Include="Scripts\DataTables\dataTables.fixedHeader.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.foundation.js" />
-    <Content Include="Scripts\DataTables\dataTables.foundation.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.jqueryui.js" />
-    <Content Include="Scripts\DataTables\dataTables.jqueryui.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.keyTable.js" />
-    <Content Include="Scripts\DataTables\dataTables.keyTable.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.material.js" />
-    <Content Include="Scripts\DataTables\dataTables.material.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.responsive.js" />
-    <Content Include="Scripts\DataTables\dataTables.responsive.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.rowGroup.js" />
-    <Content Include="Scripts\DataTables\dataTables.rowGroup.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.rowReorder.js" />
-    <Content Include="Scripts\DataTables\dataTables.rowReorder.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.scroller.js" />
-    <Content Include="Scripts\DataTables\dataTables.scroller.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.select.js" />
-    <Content Include="Scripts\DataTables\dataTables.select.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.semanticui.js" />
-    <Content Include="Scripts\DataTables\dataTables.semanticui.min.js" />
-    <Content Include="Scripts\DataTables\dataTables.uikit.js" />
-    <Content Include="Scripts\DataTables\dataTables.uikit.min.js" />
-    <Content Include="Scripts\DataTables\jquery.dataTables.js" />
-    <Content Include="Scripts\DataTables\jquery.dataTables.min.js" />
-    <Content Include="Scripts\DataTables\responsive.bootstrap.js" />
-    <Content Include="Scripts\DataTables\responsive.bootstrap.min.js" />
-    <Content Include="Scripts\DataTables\responsive.bootstrap4.js" />
-    <Content Include="Scripts\DataTables\responsive.bootstrap4.min.js" />
-    <Content Include="Scripts\DataTables\responsive.foundation.js" />
-    <Content Include="Scripts\DataTables\responsive.foundation.min.js" />
-    <Content Include="Scripts\DataTables\responsive.jqueryui.js" />
-    <Content Include="Scripts\DataTables\responsive.jqueryui.min.js" />
-    <Content Include="Scripts\DataTables\responsive.semanticui.js" />
-    <Content Include="Scripts\DataTables\responsive.semanticui.min.js" />
-    <Content Include="Scripts\jquery-1.7.js" />
-    <Content Include="Scripts\jquery-1.7.min.js" />
-    <Content Include="Scripts\jquery-confirm\jquery-confirm.css" />
-    <Content Include="Scripts\jquery-confirm\jquery-confirm.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.date.extensions.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.date.extensions.min.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.extensions.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.extensions.min.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.min.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.numeric.extensions.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.numeric.extensions.min.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.phone.extensions.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.phone.extensions.min.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.regex.extensions.js" />
-    <Content Include="Scripts\jquery.inputmask\inputmask.regex.extensions.min.js" />
-    <Content Include="Scripts\jquery.inputmask\jquery.inputmask.bundle.js" />
-    <Content Include="Scripts\jquery.inputmask\jquery.inputmask.js" />
-    <Content Include="Scripts\jquery.inputmask\jquery.inputmask.min.js" />
-    <Content Include="Scripts\jszip.min.js" />
-    <Content Include="Scripts\pdfmake.min.js" />
-    <Content Include="Scripts\summernote\lang\summernote-ar-AR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-bg-BG.js" />
-    <Content Include="Scripts\summernote\lang\summernote-ca-ES.js" />
-    <Content Include="Scripts\summernote\lang\summernote-cs-CZ.js" />
-    <Content Include="Scripts\summernote\lang\summernote-da-DK.js" />
-    <Content Include="Scripts\summernote\lang\summernote-de-DE.js" />
-    <Content Include="Scripts\summernote\lang\summernote-el-GR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-es-ES.js" />
-    <Content Include="Scripts\summernote\lang\summernote-es-EU.js" />
-    <Content Include="Scripts\summernote\lang\summernote-fa-IR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-fi-FI.js" />
-    <Content Include="Scripts\summernote\lang\summernote-fr-FR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-gl-ES.js" />
-    <Content Include="Scripts\summernote\lang\summernote-he-IL.js" />
-    <Content Include="Scripts\summernote\lang\summernote-hr-HR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-hu-HU.js" />
-    <Content Include="Scripts\summernote\lang\summernote-id-ID.js" />
-    <Content Include="Scripts\summernote\lang\summernote-it-IT.js" />
-    <Content Include="Scripts\summernote\lang\summernote-ja-JP.js" />
-    <Content Include="Scripts\summernote\lang\summernote-ko-KR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-lt-LT.js" />
-    <Content Include="Scripts\summernote\lang\summernote-lt-LV.js" />
-    <Content Include="Scripts\summernote\lang\summernote-nb-NO.js" />
-    <Content Include="Scripts\summernote\lang\summernote-nl-NL.js" />
-    <Content Include="Scripts\summernote\lang\summernote-pl-PL.js" />
-    <Content Include="Scripts\summernote\lang\summernote-pt-BR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-pt-PT.js" />
-    <Content Include="Scripts\summernote\lang\summernote-ro-RO.js" />
-    <Content Include="Scripts\summernote\lang\summernote-ru-RU.js" />
-    <Content Include="Scripts\summernote\lang\summernote-sk-SK.js" />
-    <Content Include="Scripts\summernote\lang\summernote-sl-SI.js" />
-    <Content Include="Scripts\summernote\lang\summernote-sr-RS-Latin.js" />
-    <Content Include="Scripts\summernote\lang\summernote-sr-RS.js" />
-    <Content Include="Scripts\summernote\lang\summernote-sv-SE.js" />
-    <Content Include="Scripts\summernote\lang\summernote-ta-IN.js" />
-    <Content Include="Scripts\summernote\lang\summernote-th-TH.js" />
-    <Content Include="Scripts\summernote\lang\summernote-tr-TR.js" />
-    <Content Include="Scripts\summernote\lang\summernote-uk-UA.js" />
-    <Content Include="Scripts\summernote\lang\summernote-vi-VN.js" />
-    <Content Include="Scripts\summernote\lang\summernote-zh-CN.js" />
-    <Content Include="Scripts\summernote\lang\summernote-zh-TW.js" />
-    <Content Include="Scripts\summernote\plugin\databasic\summernote-ext-databasic.css" />
-    <Content Include="Scripts\summernote\plugin\databasic\summernote-ext-databasic.js" />
-    <Content Include="Scripts\summernote\plugin\hello\summernote-ext-hello.js" />
-    <Content Include="Scripts\summernote\plugin\specialchars\summernote-ext-specialchars.js" />
-    <Content Include="Scripts\summernote\summernote.css" />
-    <Content Include="Scripts\summernote\summernote.js" />
-    <Content Include="Scripts\summernote\summernote.min.js" />
-    <Content Include="Scripts\tether\tether.js" />
-    <Content Include="Scripts\tether\tether.min.js" />
-    <Content Include="Scripts\summernote\font\summernote.woff" />
-    <Content Include="Scripts\summernote\font\summernote.ttf" />
-    <Content Include="Scripts\summernote\font\summernote.eot" />
-    <Content Include="Scripts\jquery-confirm\jquery-confirm.less" />
     <Content Include="Service References\WCFDocumentos\AtencionTramites.WCF.WCFDocumentos.ResultadoGeneracion.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -436,8 +299,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Scripts\UltimusFramework.intellisense.js" />
-    <Content Include="Scripts\vfs_fonts.js" />
     <None Include="Service References\WCFDocumentos\WCFDocumentos1.disco" />
     <Content Include="Catalogos.svc" />
     <Content Include="Web.config" />

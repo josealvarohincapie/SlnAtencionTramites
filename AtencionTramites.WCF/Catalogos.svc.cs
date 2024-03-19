@@ -298,7 +298,7 @@ namespace AtencionTramites.WCF
                                            where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Proceso == model.UltimusProcess && q.Etapa == model.UltimusStep && q.Habilitado
                                            orderby q.Orden
                                            select q).ToList();
-                    if (model.UltimusStep == Constantes.AtencionTramiteAse.Etapas.GenerarCarta.Nombre)
+                    if (model.UltimusStep == Constantes.AtencionTramiteAse.Etapas.GenerarDocumento.Nombre)
                     {
                         foreach (TipoDocumentoOcultaDecision ocultar in db.TipoDocumentoOcultaDecision.Where((TipoDocumentoOcultaDecision q) => (int?)q.CodigoTipoDocumento == model.CodigoTipoDocumento && ((int?)q.CodigoSubTipoDocumento == model.CodigoSubTipoDocumento || q.CodigoSubTipoDocumento == 0)).ToList())
                         {
