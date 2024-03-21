@@ -74,6 +74,10 @@ namespace AtencionTramites
                 .Include("~/Ultimus.Framework/AtencionTramitesAse/API.Seguimiento.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
+            bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesSol/GestionPeticion")
+                .Include("~/Ultimus.Framework/AtencionTramitesSol/API.GestionPeticion.js")
+                .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
+                );
         }
     }
 }
