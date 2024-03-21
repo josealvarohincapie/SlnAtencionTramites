@@ -651,6 +651,10 @@
     <Content Include="Scripts\summernote\font\summernote.eot" />
     <None Include="Scripts\UltimusFramework.intellisense.js" />
     <Content Include="Scripts\vfs_fonts.js" />
+    <Content Include="Ultimus.Framework\AtencionTramitesAse\API.Verificar.js" />
+    <Content Include="Ultimus.Framework\AtencionTramitesAse\API.RevisionVistoBueno.js" />
+    <Content Include="Ultimus.Framework\AtencionTramitesAse\API.Archivar.js" />
+    <Content Include="Ultimus.Framework\AtencionTramitesAse\API.Aprobar.js" />
     <Content Include="Ultimus.Framework\AtencionTramitesSol\API.GestionPeticion.js" />
     <Content Include="Ultimus.Framework\AtencionTramitesSol\API.Radicado.js" />
     <Content Include="Ultimus.Framework\AtencionTramitesSol\API.Seguimiento.js" />
