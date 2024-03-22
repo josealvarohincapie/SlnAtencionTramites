@@ -111,6 +111,11 @@ namespace AtencionTramites
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
 
+            bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesSol/SeguimientoPeticion")
+                .Include("~/Ultimus.Framework/AtencionTramitesSol/API.SeguimientoPeticion.js")
+                .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
+                );
+             //borrar esta linea
             #endregion
 
             #region Proceso Quejas

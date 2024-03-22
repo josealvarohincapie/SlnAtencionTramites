@@ -659,6 +659,7 @@
     <Content Include="Ultimus.Framework\AtencionTramitesSol\API.Radicado.js" />
     <Content Include="Ultimus.Framework\AtencionTramitesSol\API.Seguimiento.js" />
     <Content Include="Ultimus.Framework\AtencionTramitesAse\API.GenerarDocumento.js" />
+    <Content Include="Ultimus.Framework\AtencionTramitesSol\API.SeguimientoPeticion.js" />
     <Content Include="Ultimus.Framework\ClasificacionTramites\API.ClasificacionTramite.js" />
     <Content Include="Ultimus.Framework\ClasificacionTramites\API.Radicado.js" />
     <Content Include="Ultimus.Framework\ClasificacionTramites\API.Seguimiento.js" />
