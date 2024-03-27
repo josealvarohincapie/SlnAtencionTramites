@@ -11,13 +11,6 @@ namespace AtencionTramites.Controllers
     {
         UltimusLogs UltimusLogs = new UltimusLogs("ClasificacionTramitesController");
 
-        public ActionResult Radicado()
-        {
-            InitControllers();
-
-            return View();
-        }
-
         public ActionResult Seguimiento()
         {
             InitControllers();

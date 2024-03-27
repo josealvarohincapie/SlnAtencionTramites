@@ -30,7 +30,7 @@ namespace AtencionTramites.Model.ModelAtencionTramites
         public string TituloArchivo { get; set; }
 
         public DateTime FechaCreacion { get; set; }
-
+        
         [StringLength(50)]
         public string Etapa { get; set; }
 

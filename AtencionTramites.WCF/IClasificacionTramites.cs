@@ -9,6 +9,12 @@ namespace AtencionTramites.WCF
         [OperationContract]
         ClasificacionTramites_RadicadoJSON Radicado_Cargar(ClasificacionTramites_RadicadoJSON model);
 
+        [OperationContract]
+        Documentos_RadicadoJSON CargarDocumentosRadicado(Documentos_RadicadoJSON model);
+
+        [OperationContract]
+        ClasificacionPeticion_JSON CargarClasificacionPeticion(ClasificacionPeticion_JSON model);
+
         //[OperationContract]
         //ClasificacionTramites_RadicadoJSON Radicado_Cargar_OLD(ClasificacionTramites_RadicadoJSON model);
 

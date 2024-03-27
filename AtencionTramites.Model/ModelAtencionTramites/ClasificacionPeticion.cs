@@ -50,5 +50,7 @@ namespace AtencionTramites.Model.ModelAtencionTramites
         public virtual TipoPeticion TipoPeticion { get; set; }
 
         public virtual Radicado Radicado { get; set; }
+
+   
     }
 }

@@ -27,7 +27,8 @@ namespace AtencionTramites.Model.DAL
 			}
 			foreach (RadicadoDocumento RadicadoDocumento in RadicadoDocumentoList)
 			{
-				LlenarRadicadoDocumento(RadicadoDocumento);
+				//RadicadoDocumento.FechaCreacionFormateada = RadicadoDocumento.FechaCreacion.ToString()
+                LlenarRadicadoDocumento(RadicadoDocumento);
 			}
 		}
 

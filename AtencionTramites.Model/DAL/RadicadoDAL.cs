@@ -16,7 +16,10 @@ namespace AtencionTramites.Model.DAL
 			{
 				return null;
 			}
-			Radicado ret = (from Radicado in db.Radicado.Include((Radicado q) => q.Fuente).Include((Radicado q) => q.Genero).Include((Radicado q) => q.GrupoEtnico)
+			Radicado ret = (from Radicado in db.Radicado
+					.Include((Radicado q) => q.Fuente)
+					.Include((Radicado q) => q.Genero)
+					.Include((Radicado q) => q.GrupoEtnico)
 					.Include((Radicado q) => q.SituacionDiscapacidad)
 					.Include((Radicado q) => q.SujetoEspecialProteccion)
 					.Include((Radicado q) => q.TipoDocumento)

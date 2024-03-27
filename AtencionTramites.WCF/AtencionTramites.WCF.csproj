@@ -121,6 +121,7 @@
     <Content Include="AtencionTramiteAse.svc" />
     <Content Include="AtencionTramiteQue.svc" />
     <Content Include="AtencionTramiteSol.svc" />
+    <Content Include="Radicados.svc" />
     <Content Include="ClasificacionTramites.svc" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.css" />
     <Content Include="Content\DataTables\css\autoFill.bootstrap.min.css" />
@@ -326,6 +327,10 @@
     </Compile>
     <Compile Include="AtencionTramiteSol.svc.cs">
       <DependentUpon>AtencionTramiteSol.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IRadicados.cs" />
+    <Compile Include="Radicados.svc.cs">
+      <DependentUpon>Radicados.svc</DependentUpon>
     </Compile>
     <Compile Include="ClasificacionTramites.svc.cs">
       <DependentUpon>ClasificacionTramites.svc</DependentUpon>

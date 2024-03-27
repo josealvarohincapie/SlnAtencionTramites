@@ -18,6 +18,12 @@ namespace AtencionTramites.WCF
     {
         private UltimusLogs logs = new UltimusLogs("ClasificacionTramites");
 
+        /// <summary>
+        /// 
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public ClasificacionTramites_RadicadoJSON Radicado_Cargar(ClasificacionTramites_RadicadoJSON model)
         {
             Variables Variables = new Variables();
@@ -29,6 +35,8 @@ namespace AtencionTramites.WCF
                     RadicadoInternoDAL RadicadoInternoDAL = new RadicadoInternoDAL();
                     RespuestaDAL RespuestaDAL = new RespuestaDAL();
                     model.Radicado = RadicadoDAL.ObtenerRadicado(db, model.CodigoSolicitudOriginal);
+                    model.Radicado.ClasificacionPeticion = ObtenerClasificacionPeticion(model.CodigoSolicitudOriginal);
+                    model.Radicado.DerechosClasificacion = ObtenerDerechosClasificacion(model.CodigoSolicitudOriginal);
                     model.RadicadoInterno = RadicadoInternoDAL.ObtenerRadicadoInterno(db, model.CodigoSolicitudInterna, 1);
                     model.RadicadoInternoRespuesta = RadicadoInternoDAL.ObtenerRadicadoInterno(db, model.CodigoSolicitudInterna, 2);
                     model.Respuesta = RespuestaDAL.ObtenerRespuesta(db, model.CodigoSolicitud);
@@ -136,6 +144,88 @@ namespace AtencionTramites.WCF
                     //        //}
                     //    }
                     //}
+                }
+                model.CodigoRespuesta = TipoCodigoRespuesta.EXITOSO.ToString();
+            }
+            catch (Exception ex)
+            {
+                model.DescripcionRespuesta = Constantes.MensajeErrorGenerico;
+                model.CodigoRespuesta = TipoCodigoRespuesta.ERROR.ToString();
+                logs.Error(ex);
+            }
+            return model;
+        }
+
+        public Documentos_RadicadoJSON CargarDocumentosRadicado(Documentos_RadicadoJSON model)
+        {
+            try
+            {
+                using (DbAtencionTramites db = new DbAtencionTramites())
+                {
+                    RadicadoDocumentoDAL radicadoDocumentoDAL = new RadicadoDocumentoDAL();
+                    model.Documentos = radicadoDocumentoDAL.ObtenerRadicadoDocumentoList(db, model.CodigoSolicitudOriginal);
+                }
+                model.CodigoRespuesta = TipoCodigoRespuesta.EXITOSO.ToString();
+            }
+            catch (Exception ex)
+            {
+                model.DescripcionRespuesta = Constantes.MensajeErrorGenerico;
+                model.CodigoRespuesta = TipoCodigoRespuesta.ERROR.ToString();
+                logs.Error(ex);
+            }
+            return model;
+        }
+
+        public List<DerechosClasificacion> ObtenerDerechosClasificacion(long codigoSolicitudOriginal)
+        {
+            List<DerechosClasificacion> derechosClasificacion = null;
+            try
+            {
+
+                using (DbAtencionTramites db = new DbAtencionTramites())
+                {
+                    DerechoClasificacionDAL derechoClasificacionDAL = new DerechoClasificacionDAL();
+
+                    derechosClasificacion = derechoClasificacionDAL.ObtenerDerechosClasificacion(db, codigoSolicitudOriginal);
+                }
+            }
+            catch (Exception ex)
+            {
+                logs.Error(ex);
+            }
+
+            return derechosClasificacion;
+        }
+
+        public ClasificacionPeticion ObtenerClasificacionPeticion(long codigoSolicitudOriginal)
+        {
+            ClasificacionPeticion clasificacionPeticion = null;
+            try
+            {
+                using (DbAtencionTramites db = new DbAtencionTramites())
+                {
+                    ClasificacionPeticionDAL clasificacionPeticionDAL = new ClasificacionPeticionDAL();
+
+                    clasificacionPeticion = clasificacionPeticionDAL.ObtenerClasificacionPeticion(db, codigoSolicitudOriginal);
+                }                
+            }
+            catch (Exception ex)
+            {                
+                logs.Error(ex);
+            }
+
+            return clasificacionPeticion;
+        }
+
+        public ClasificacionPeticion_JSON CargarClasificacionPeticion(ClasificacionPeticion_JSON model)
+        {
+            try
+            {
+                using (DbAtencionTramites db = new DbAtencionTramites())
+                {
+                    ClasificacionPeticionDAL clasificacionPeticionDAL = new ClasificacionPeticionDAL();
+
+                    model.ClasificacionPeticion = clasificacionPeticionDAL.ObtenerClasificacionPeticion(db, model.CodigoSolicitudOriginal);
                 }
                 model.CodigoRespuesta = TipoCodigoRespuesta.EXITOSO.ToString();
             }

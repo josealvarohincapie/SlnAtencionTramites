@@ -28,16 +28,70 @@ this.getDataModel = function () {
     //debugger;
     ENDREQUEST();
     //SetearAccordion();
-    debugger;
+    $("#btnBotonesAT_ImprimirPantalla").unbind("click");
+    $("#btnBotonesAT_ImprimirPantalla").click(function () {
+        window.print();
+        return false;
+    });
+
+    $("#txtRadicado_TipoDocumento").unbind("change");
+    $("#hiddenClasificacionPeticionAT_TipoPeticion").change(function () {
+        Radicado_CargarHorasDiasVencimiento();
+        //$("#hiddenClasificacionPeticionAT_TipoPeticion").val(ClasificacionPeticion.TipoPeticion.Codigo);
+    });
+    
+    Grid_Init("AnexosRadicadoAT_AnexosLista", null, true, function (fila) {
+        fila.TamanoArchivoFormatted = CustomNumberFormat(fila.TamanoArchivo);
+        fila.FechaCreacionFormatted = fila.FechaCreacion == this.undefined ? null : FormatDateTime(fila.FechaCreacion, true);
+        fila.NombreUsuarioCreacion = fila.NombreUsuarioCreacion == this.undefined ? null : fila.NombreUsuarioCreacion;
+        fila.OpcionesRadicadoDocumento = $("#OpcionesAnexosLectura").html();
+        fila.OpcionesRadicadoDocumento = replaceAll("#RutaVirtualArchivo#", fila.RutaVirtualArchivo, fila.OpcionesRadicadoDocumento);
+        fila.OpcionesRadicadoDocumento = replaceAll("#CodigoDocumento#", fila.CodigoDocumento, fila.OpcionesRadicadoDocumento);
+    });
+
+    Grid_Init("ClasificacionPeticionAT_DerechosLista", null, true, function (fila) {
+        debugger;
+        fila.Derecho = fila.Derecho.Nombre;
+        fila.Opciones = $("#OpcionesEditarFila").html();        
+    });
+
+
     var local = ObtenerModelo();
 
-    Ultimus.AjaxPostData("{0}/Catalogos.svc/api/ObtenerAreaDerecho".format(WebAplicationWCF), local, true, false, function (data) {
+    local.CodigoSolicitudOriginal = 5;
+    
+    Ultimus.AjaxPostData("{0}/ClasificacionTramites.svc/api/Radicado_Cargar".format(WebAplicationWCF), local, true, false, function (data) {
         debugger;
-        if (data == null) { alert('edgar'); }
         Response(data, function () {
             CargarFormulario(data);
         });
     }, "ERROR");
+    /*
+    Ultimus.AjaxPostData("{0}/ClasificacionTramites.svc/api/CargarDocumentosRadicado".format(WebAplicationWCF), local, true, false, function (dataDocumentos) {
+        
+        Response(dataDocumentos, function () {
+            $("#AnexosRadicadoAT_AnexosLista").Grid("RenderGrid", dataDocumentos.Documentos);
+        });
+    }, "ERROR");
+    */
+    /*
+    Ultimus.AjaxPostData("{0}/ClasificacionTramites.svc/api/CargarClasificacionPeticion".format(WebAplicationWCF), local, true, false, function (dataClasificacion) {
+        
+        Response(dataClasificacion, function () {
+            CargarClasificacionPeticion(dataClasificacion);
+        });
+    }, "ERROR");
+    */
+
+    /*
+    Ultimus.AjaxPostData("{0}/Catalogos.svc/api/ObtenerAreaDerecho".format(WebAplicationWCF), local, true, false, function (data) {
+        debugger;
+        if (data == null) { alert('edgar'); }
+        Response(data, function () {
+           // CargarFormulario(data);
+        });
+    }, "ERROR");
+    */
 }
 
 this.Radicado_Guardar = function () {
@@ -169,104 +223,115 @@ this.Radicado_Descartar = function () {
     }
 }
 
-this.Radicado_Firmar = function () {
-    if (IsDoubleClicked($(this))) return;
-    if (confirm("¿Seguro que desea aprobar y firmar digitalmente esta solicitud?")) {
-        $("#btnRespuestaDecision_Firmar").prop("disabled", true);
-        $("#btnBotones_Completar").prop("disabled", true);
-        var local = ObtenerModelo();
-        CargarRelacionCampos();
-        local = RelacionCamposFramework.Guardar(local);
-        Ultimus.AjaxPostData("{0}/CorrExtEnviada.svc/api/Radicado_Firmar".format(WCFUrl), local, true, false, function (data) {
-            $("#btnRespuestaDecision_Firmar").prop("disabled", false);
-            $("#btnBotones_Completar").prop("disabled", false);
-            Response(data, function () {
-                $("#ifrFirmarDocumento").prop("src", 'about:blank');
-                setTimeout(function () {
-                    $("#ifrFirmarDocumento").prop("src", data.Respuesta.UrlParaFirma);
-                    $("#modalFirmarDocumento").modal("show");
-                    $("#modalFirmarDocumento").on("hidden.bs.modal", function () {
-                        CloseForm();
-                    });
-                }, 100);
-            });
-        }, "ERROR");
+this.CargarFormulario = function (data) {
+
+    CargarRelacionCampos();
+
+    RelacionCamposFramework.Cargar(data);
+
+    if (data.Radicado != null) {
+        $("#txtInfoRadicadoAT_NumeroRadicado").val(data.Radicado.NumeroRadicado);
+        
+        $("#hiddenInfoRadicadoAT_CanalAtencion").val(data.Radicado.CodigoFuente);
+        $("#txtInfoRadicadoAT_CanalAtencion").val(data.Radicado.NombreFuente);
+
+        //alert(data.Radicado.Fecha);
+        $("#txtInfoRadicadoAT_Fecha").val(data.Radicado.Fecha);
+
+        $("#hiddenInfoRadicadoAT_TipoSolicitante").val(data.Radicado.CodigoTipoSolicitante);
+        $("#txtInfoRadicadoAT_TipoSolicitante").val(data.Radicado.NombreTipoSolicitante);
+
+        if (data.Radicado.EsAnonimo == true) {
+            $('#chkInfoRadicadoAT_EsAnonimo').prop('checked', true);                 
+        } else {
+            $('#chkInfoRadicadoAT_EsAnonimo').prop('checked', false);
+        }
+        
+        $("#hiddenInfoRadicadoAT_TipoDocId").val(data.Radicado.CodigoTipoDocumentoIdentificacion);
+        $("#txtInfoRadicadoAT_TipoDocId").val(data.Radicado.NombreTipoDocumentoIdentificacion);
+        
+        $("#txtInfoRadicadoAT_NumIdentificacion").val(data.Radicado.NumeroDocumentoIdentificacion);
+        $("#txtInfoRadicadoAT_Remitente").val(data.Radicado.Remitente);
+        
+        $("#hiddenInfoRadicadoAT_MiembroGrupoEtnico").val(data.Radicado.CodigoGrupoEtnico);
+        $("#txtInfoRadicadoAT_MiembroGrupoEtnico").val(data.Radicado.NombreGrupoEtnico);
+        
+        $("#hiddenInfoRadicadoAT_SexoAsignado").val(data.Radicado.CodigoSexo);
+        $("#txtInfoRadicadoAT_SexoAsignado").val(data.Radicado.NombreSexo);
+        
+        $("#hiddenInfoRadicadoAT_IdentidadGenero").val(data.Radicado.CodigoGenero);
+        $("#txtInfoRadicadoAT_IdentidadGenero").val(data.Radicado.NombreGenero);
+        
+        $("#hiddenInfoRadicadoAT_OrientacionSexual").val(data.Radicado.CodigoOrientacionSexual);
+        $("#txtInfoRadicadoAT_OrientacionSexual").val(data.Radicado.NombreOrientacionSexual);
+        
+        $("#hiddenInfoRadicadoAT_ExpresionGenero").val(data.Radicado.CodigoExpresionGenero);
+        $("#txtInfoRadicadoAT_ExpresionGenero").val(data.Radicado.NombreExpresionGenero);
+        
+        $("#hiddenInfoRadicadoAT_RangoEdad").val(data.Radicado.CodigoRangoEdad);
+        $("#txtInfoRadicadoAT_RangoEdad").val(data.Radicado.NombreRangoEdad);
+
+        $("#AnexosRadicadoAT_AnexosLista").Grid("RenderGrid", data.Radicado.RadicadoDocumento);
+        debugger;
+        CargarClasificacionPeticion(data.Radicado.ClasificacionPeticion);
+
+        $("#ClasificacionPeticionAT_DerechosLista").Grid("RenderGrid", data.Radicado.DerechosClasificacion);
     }
+
+    
+    /*
+        $("#txtRadicado_Remitente").val(data.Radicado.Remitente);
+    
+        if (data.Respuesta != null && data.Respuesta.RutaVirtualDocumento != null) {
+            $("#ifrDocumento").prop("src", data.Respuesta.RutaVirtualDocumento);
+        }    
+    */
 }
 
-this.CargarFormulario = function (data) {
-    if (data.Radicado == null) {
-        $("#liRecibido").hide();
-        $("#frmRadicadoDocumento").hide();
-    }
-    if (data.RadicadoInterno == null) {
-        $("#frmRadicadoInternoDocumento").hide();
-    }
-    if (data.RadicadoInternoRespuesta == null) {
-        $("#frmRadicadoInternoRespuestaDocumento").hide();
-    }
-    $("#frmRadicado").reset();
-    $("#frmRespuesta").reset();
-    CargarRelacionCampos();
-    RelacionCamposFramework.Cargar(data);
-    if (data.Radicado != null) {
-        $("#txtRadicado_Remitente").val(data.Radicado.Remitente);
-    }
-    $("#frmRadicado").valid();
-    $("#frmRespuesta").valid();
-    $("#frmRespuestaAdicional").valid();
-    if (data.Respuesta != null && data.Respuesta.RutaVirtualDocumento != null) {
-        $("#ifrDocumento").prop("src", data.Respuesta.RutaVirtualDocumento);
-    }
-    if (data.Radicado != null) {
-        if (data.Radicado.CodigoFuente != 2) {
-            $("#subMenu2").hide();
-            $("#liCorreo").hide();
-        }
-        if (data.Radicado.CodigoFuente != 3) {
-            $("#subMenu3").hide();
-            $("#liPqrsdf").hide();
-        }
-        if (data.Radicado.CodigoFuente != 2 && data.Radicado.CodigoFuente != 3) {
-            $("#liRadicado").hide();
-        }
-        $("#RadicadoDocumento_AnexoList").Grid("RenderGrid", data.Radicado.RadicadoDocumento);
-        if (data.Radicado.CorreoFuente != null) {
-            $("#Radicado_CuerpoCorreoFuente").html(data.Radicado.CorreoFuente.Cuerpo);
-        }
-        if (data.Radicado.GrupoEtnicoReconoce == true) {
-            $("#radio_Radicado_GrupoEtnicoReconoce_0").attr('checked', true);
-        } else {
-            $("#radio_Radicado_GrupoEtnicoReconoce_1").attr('checked', true);
-        }
-        if (data.Radicado.GrupoEtnicoIndigenaTieneCargo == true) {
-            $("#radio_Radicado_GrupoEtnicoIndigenaTieneCargo_0").attr('checked', true);
-        } else {
-            $("#radio_Radicado_GrupoEtnicoIndigenaTieneCargo_1").attr('checked', true);
-        }
-        if (data.Radicado.PqrsFuente != null) {
-            if (data.Radicado.PqrsFuente.GrupoEtnicoReconoce == true) {
-                $("#radio_Radicado_GrupoEtnicoReconocePqrsFuente_0").attr('checked', true);
-            } else {
-                $("#radio_Radicado_GrupoEtnicoReconocePqrsFuente_1").attr('checked', true);
-            }
-            if (data.Radicado.PqrsFuente.GrupoEtnicoIndigenaTieneCargo == true) {
-                $("#radio_Radicado_GrupoEtnicoIndigenaTieneCargoPqrsFuente_0").attr('checked', true);
-            } else {
-                $("#radio_Radicado_GrupoEtnicoIndigenaTieneCargoPqrsFuente_1").attr('checked', true);
-            }
-        }
-    }
-    if (data.Respuesta != null) {
-        $("#RespuestaAdicional_RespuestaAdicionalList").Grid("RenderGrid", data.Respuesta.RespuestaAdicional);
-        $("#RespuestaDocumento_AnexoList").Grid("RenderGrid", data.Respuesta.RespuestaDocumento);
-    }
-    if (data.RadicadoInterno != null) {
-        $("#RadicadoInternoDocumento_AnexoList").Grid("RenderGrid", data.RadicadoInterno.RadicadoInternoDocumento);
-    }
-    if (data.RadicadoInternoRespuesta != null) {
-        $("#RadicadoInternoRespuestaDocumento_AnexoList").Grid("RenderGrid", data.RadicadoInternoRespuesta.RadicadoInternoDocumento);
-    }
+this.CargarClasificacionPeticion = function (ClasificacionPeticion) {
 
-    EvaluarEstadosControlesFramework();
+    //CargarRelacionCampos();
+
+    //RelacionCamposFramework.Cargar(data);
+    
+    if (ClasificacionPeticion != null) {
+
+        $("#hiddenClasificacionPeticionAT_TipoPeticion").val(ClasificacionPeticion.TipoPeticion.Codigo);
+        $("#txtClasificacionPeticionAT_TipoPeticion").val(ClasificacionPeticion.TipoPeticion.Nombre);
+
+        $("#hiddenClasificacionPeticionAT_AreaDerechos").val(ClasificacionPeticion.AreaDerecho.Codigo);
+        $("#txtClasificacionPeticionAT_AreaDerechos").val(ClasificacionPeticion.AreaDerecho.Nombre);
+
+        $("#txtClasificacionPeticionAT_Descripcion").val(ClasificacionPeticion.DescripcionAsesoria);
+        $("#txtClasificacionPeticionAT_Observaciones").val(ClasificacionPeticion.Observaciones);
+
+        if (ClasificacionPeticion.RespuestaEscrito == true) {
+            $("#radio_ClasificacionPeticionAT_RespuestaEscrita_0").attr('checked', true);
+        } else {
+            $("#radio_ClasificacionPeticionAT_RespuestaEscrita_1").attr('checked', true);
+        }
+
+        $("#hiddenClasificacionPeticionAT_ConclusionAsesoria").val(ClasificacionPeticion.ConclusionAsesoria.Codigo);
+        $("#txtClasificacionPeticionAT_ConclusionAsesoria").val(ClasificacionPeticion.ConclusionAsesoria.Nombre);
+
+        /*
+        $("#hiddenClasificacionPeticionAT_TipoPeticion").val(data.ClasificacionPeticion.TipoPeticion.Codigo);
+        $("#txtClasificacionPeticionAT_TipoPeticion").val(data.ClasificacionPeticion.TipoPeticion.Nombre);
+
+        $("#hiddenClasificacionPeticionAT_AreaDerechos").val(data.ClasificacionPeticion.AreaDerecho.Codigo);
+        $("#txtClasificacionPeticionAT_AreaDerechos").val(data.ClasificacionPeticion.AreaDerecho.Nombre);
+
+        $("#txtClasificacionPeticionAT_Descripcion").val(data.ClasificacionPeticion.DescripcionAsesoria);
+        $("#txtClasificacionPeticionAT_Observaciones").val(data.ClasificacionPeticion.Observaciones);
+
+        if (data.ClasificacionPeticion.RespuestaEscrito == true) {
+            $("#radio_ClasificacionPeticionAT_RespuestaEscrita_0").attr('checked', true);
+        } else {
+            $("#radio_ClasificacionPeticionAT_RespuestaEscrita_1").attr('checked', true);
+        }
+
+        $("#hiddenClasificacionPeticionAT_ConclusionAsesoria").val(data.ClasificacionPeticion.ConclusionAsesoria.Codigo);
+        $("#txtClasificacionPeticionAT_ConclusionAsesoria").val(data.ClasificacionPeticion.ConclusionAsesoria.Nombre);
+        */
+    }
 }

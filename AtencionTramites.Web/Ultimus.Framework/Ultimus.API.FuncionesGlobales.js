@@ -417,6 +417,7 @@ this.CargarRelacionCampos = function (form) {
     }
     //InfoRadicadoAT
     if (form == undefined || form == "InfoRadicadoAT") {
+
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_NumeroRadicado", valor: "InfoRadicadoAT.NumeroRadicado" });
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_CanalAtencion", codigo: "InfoRadicadoAT.CodigoCanalAtencion", valor: "InfoRadicadoAT.NombreCanalAtencion" });
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_Fecha", valor: "InfoRadicadoAT.Fecha" });
@@ -424,6 +425,7 @@ this.CargarRelacionCampos = function (form) {
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_TipoDocId", codigo: "InfoRadicadoAT.CodigoTipoDocId", valor: "InfoRadicadoAT.NombreTipoDocId" });
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_NumIdentificacion", valor: "InfoRadicadoAT.NumIdentificacion" });
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_Remitente", valor: "InfoRadicadoAT.Remitente" });
+        RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_MiembroGrupoEtnico", codigo: "InfoRadicadoAT.CodigoMiembroGrupoEtnico", valor: "InfoRadicadoAT.NombreMiembroGrupoEtnico" });
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_SexoAsignado", codigo: "InfoRadicadoAT.CodigoSexoAsignado", valor: "InfoRadicadoAT.NombreSexoAsignado" });
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_IdentidadGenero", codigo: "InfoRadicadoAT.CodigoIdentidadGenero", valor: "InfoRadicadoAT.NombreIdentidadGenero" });
         RelacionCamposFramework.AgregarRelacion("basico", { IdControl: "InfoRadicadoAT_OrientacionSexual", codigo: "InfoRadicadoAT.CodigoOrientacionSexual", valor: "InfoRadicadoAT.NombreOrientacionSexual" });

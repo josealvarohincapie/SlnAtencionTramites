@@ -129,6 +129,26 @@
     #frmClasificacionPeticion .active {
         display: block;
     }
+    .tituloPanel {
+        background-color: #78c9c6;
+        color: #ffffff;
+        margin: 5%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    #udynamic_ClasificacionPeticionAT_AgregarDerecho {
+        float: right;
+        background-color: #78c9c6;
+        padding: 1px;
+    }
+
+    #udynamic_PeticionarioTablaAT_AgregarPeticionario {
+        float: right;
+        background-color: #78c9c6;
+        padding: 1px;
+        margin: 5px;
+        margin-right: 15px;
+    }
 </style>
 
 
@@ -155,9 +175,9 @@
                     <div class="contenedor">
                         <div class="columna">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <h3>Datos básicos del peticionario</h3>
-
+                                <div class="col-md-12">
+                                    <h3 class="text-center tituloPanel">Datos básicos del peticionario</h3>
+									
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_NumeroRadicado")
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_CanalAtencion")
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_Fecha")
@@ -166,13 +186,14 @@
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_TipoDocId")
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_NumIdentificacion")
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_Remitente")
+									
                                 </div>
                             </div>
                         </div>
                         <div class="columna">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <h3>Datos enfoques diferenciales y de género</h3>
+                                <div class="col-md-12">
+                                    <h3 class="text-center tituloPanel">Datos enfoques diferenciales y de género</h3>
 
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_MiembroGrupoEtnico")
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_SexoAsignado")
@@ -180,6 +201,7 @@
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_OrientacionSexual")
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_ExpresionGenero")
                                     @UltimusHelper.Dynamic("InfoRadicadoAT_RangoEdad")
+
                                 </div>
                             </div>
                         </div>
@@ -197,8 +219,10 @@
                 </h3>
                 <div id="divCollapse1" class="panel-collapse collapse in">
                     <div class="row">
-                        <div class="col-md-6">
-                            @UltimusHelper.Dynamic("AnexosRadicadoAT_AnexosLista")
+                        <div class="col-md-8">
+                            
+							@UltimusHelper.Dynamic("AnexosRadicadoAT_AnexosLista")
+							
                         </div>
                     </div>
                 </div>
@@ -214,19 +238,24 @@
                 </h3>
                 <div id="divCollapse2" class="panel-collapse collapse in">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
+
                             @UltimusHelper.Dynamic("PeticionarioTablaAT_PeticionariosLista")
+
                         </div>
-                        <div style="text-align: right;">
-                            @UltimusHelper.Dynamic("PeticionarioTablaAT_AgregarPeticionario")
-                        </div>
+                    </div>
+                    <div class="row">
+
+                        @UltimusHelper.Dynamic("PeticionarioTablaAT_AgregarPeticionario")
+
                     </div>
                     <div class="row">
                         <div class="contenedor">
                             <div class="columna">
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <h3>Datos básicos del usuario (a)</h3>
+                                        <h3 class="text-center tituloPanel">Datos básicos del usuario (a)</h3>
+
                                         @UltimusHelper.Dynamic("PeticionarioAT_TipoSolicitante")
                                         @UltimusHelper.Dynamic("PeticionarioAT_Anonimo")
                                         @UltimusHelper.Dynamic("PeticionarioAT_TipoDocId")
@@ -248,18 +277,20 @@
                                         @UltimusHelper.Dynamic("PeticionarioAT_CentroPoblado")
                                         @UltimusHelper.Dynamic("PeticionarioAT_CondicionDiscapacidad")
                                         @UltimusHelper.Dynamic("PeticionarioAT_SituacionDiscapacidad")
+
                                     </div>
                                 </div>
                             </div>
                             <div class="columna">
                                 <div class="row">
                                     <div class="col-md-10">
-                                        <h3>Datos enfoques diferenciales y de género</h3>
+                                        <h3 class="text-center tituloPanel">Datos enfoques diferenciales y de género</h3>
+
                                         @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_MiembroGrupoEtnico")
                                         @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_GrupoEtnico")
                                         @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_SexoAsignado")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_IdentidadGnero")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Orientacionsexual")
+                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_IdentidadGenero")
+                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_OrientacionSexual")
                                         @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_ExpresionGenero")
                                         @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_RangoEdad")
                                         @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Grupo")
@@ -284,12 +315,14 @@
                 </h3>
                 <div id="divCollapse3" class="panel-collapse collapse in">
                     <div class="row">
-                        <div class="col-md-6 ">
+                        <div class="col-md-8 ">
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_TipoPeticion")
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_DescripcionTipoPeticion")
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_AreaDerechos")
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_Derechos")
+
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_AgregarDerecho")
+
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_DerechosLista")
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_Descripcion")
                             @UltimusHelper.Dynamic("ClasificacionPeticionAT_Observaciones")
@@ -311,14 +344,24 @@
                 <div id="divCollapse4" class="panel-collapse collapse in">
                     <div class="row">
                         <div class="col-md-6">
+						
                             @UltimusHelper.Dynamic("DecisionAT_Decision")
                             @UltimusHelper.Dynamic("DecisionAT_Comentarios")
+							
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+</div>
+
+<div id="OpcionesAnexosLectura" style="display:none;">
+    <button type="button" title="Ver" class="btn btn-sm btn-default" onclick="window.open('#RutaVirtualArchivo#')">&nbsp;<i class="fa fa-external-link"></i></button>
+</div>
+
+<div id="OpcionesEditarFila" style="display:none;">
+    <button type="button" title="Eliminar" class="btn btn-sm btn-default" onclick="Grid_Delete(this)">&nbsp;<i class="fa fa-trash"></i></button>
 </div>
 
 @section scripts{

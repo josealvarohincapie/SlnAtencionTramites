@@ -90,6 +90,8 @@
     <Compile Include="Classes\AtencionTramiteQue_RadicadoJSON.cs" />
     <Compile Include="Classes\CatalogoPostJSON.cs" />
     <Compile Include="Classes\CiudadJSON.cs" />
+    <Compile Include="Classes\ClasificacionPeticion_JSON.cs" />
+    <Compile Include="Classes\Documentos_RadicadoJSON.cs" />
     <Compile Include="Classes\Constantes.cs" />
     <Compile Include="Classes\CorreoFuente.cs" />
     <Compile Include="Classes\ClasificacionTramites_RadicadoJSON.cs" />
@@ -136,6 +138,7 @@
     <Compile Include="Classes\UltimusUtility.cs" />
     <Compile Include="Classes\ValidarRadicado.cs" />
     <Compile Include="Classes\Variables.cs" />
+    <Compile Include="DAL\DerechoClasificacionDAL.cs" />
     <Compile Include="DAL\EntidadDAL.cs" />
     <Compile Include="DAL\FormatoDAL.cs" />
     <Compile Include="DAL\FuncionarioDAL.cs" />
@@ -152,6 +155,7 @@
     <Compile Include="DAL\RespuestaDAL.cs" />
     <Compile Include="DAL\RespuestaDecisionDAL.cs" />
     <Compile Include="DAL\SecretariaDAL.cs" />
+    <Compile Include="DAL\ClasificacionPeticionDAL.cs" />
     <Compile Include="DAL\TipoDocumentoDAL.cs" />
     <Compile Include="DAL\TipoNotificacionDAL.cs" />
     <Compile Include="DAL\TipoSolicitanteDAL.cs" />
