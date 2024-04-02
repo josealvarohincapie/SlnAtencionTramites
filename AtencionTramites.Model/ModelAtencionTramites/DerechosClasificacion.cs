@@ -21,13 +21,13 @@ namespace AtencionTramites.Model.ModelAtencionTramites
         [Required]
         [StringLength(250)]
         public string NombreUsuarioCreacion { get; set; }
-
+		
+		[Required]
         [StringLength(250)]
         public string IDUsuarioCreacion { get; set; }
 
         public DateTime FechaUsuarioModifica { get; set; }
 
-        [Required]
         [StringLength(250)]
         public string NombreUsuarioModifica { get; set; }
 

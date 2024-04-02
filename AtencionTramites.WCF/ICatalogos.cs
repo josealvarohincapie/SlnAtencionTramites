@@ -40,5 +40,7 @@ namespace AtencionTramites.WCF
 
         [OperationContract]
         List<JsonCatalogos> ObtenerDecision(CatalogoPostJSON model);
-    }
+		[OperationContract]
+        List<CatalogoPostJSON> ObtenerCatalogoTipoPeticion(CatalogoPostJSON model);
+	}
 }

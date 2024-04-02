@@ -1,4 +1,4 @@
-﻿$("#frmRadicadoEnviado").EnableValidationToolTip();
+﻿$("#frmGestionPeticion").EnableValidationToolTip();
 $("#frmDecision").EnableValidationToolTip();
 $("#frmInfoRadicado").EnableValidationToolTip();
 $("#frmAnexosRadicado").EnableValidationToolTip();
@@ -8,14 +8,14 @@ $("#frmClasificacionPeticion").EnableValidationToolTip();
 
 
 jQuery(document).ready(function () {
-    UpdateControlsSettings("FILTRO_FRM_RadicadoEnviadoAT", "RadicadoEnviadoAT", "frmRadicadoEnviado", function () {
-        UpdateControlsSettings("FILTRO_FRM_RespuestaDecisionEE", "RespuestaDecisionEE", "frmDecision", function () {
-            UpdateControlsSettings("FILTRO_FRM_InfoRadicadoAT", "InfoRadicadoAT", "frmInfoRadicado", function () {
-                UpdateControlsSettings("FILTRO_FRM_AnexosRadicadoAT", "AnexosRadicadoAT", "frmAnexosRadicado", function () {
-                    UpdateControlsSettings("FILTRO_FRM_PeticionarioAT", "PeticionarioAT", "frmRegistroPeticionarios", function () {
-                        UpdateControlsSettings("FILTRO_FRM_PeticionarioTablaAT", "PeticionarioTablaAT", "frmRegistroPeticionarios", function () {
-                            UpdateControlsSettings("FILTRO_FRM_PeticionarioEnfoqueAT", "PeticionarioEnfoqueAT", "frmRegistroPeticionarios", function () {
-                                UpdateControlsSettings("FILTRO_FRM_ClasificacionPeticionAT", "ClasificacionPeticionAT", "frmClasificacionPeticion", function () {
+    UpdateControlsSettings("FILTRO_FRM_GestionPeticionATSol", "GestionPeticionATSol", "frmGestionPeticion", function () {
+        UpdateControlsSettings("FILTRO_FRM_DecisionATSol", "DecisionATSol", "frmDecision", function () {
+            UpdateControlsSettings("FILTRO_FRM_InfoRadicadoATSol", "InfoRadicadoATSol", "frmInfoRadicado", function () {
+                UpdateControlsSettings("FILTRO_FRM_AnexosRadicadoATSol", "AnexosRadicadoATSol", "frmAnexosRadicado", function () {
+                    UpdateControlsSettings("FILTRO_FRM_PeticionarioATSol", "PeticionarioATSol", "frmRegistroPeticionarios", function () {
+                        UpdateControlsSettings("FILTRO_FRM_PeticionarioTablaATSol", "PeticionarioTablaATSol", "frmRegistroPeticionarios", function () {
+                            UpdateControlsSettings("FILTRO_FRM_PeticionarioEnfoqueATSol", "PeticionarioEnfoqueATSol", "frmRegistroPeticionarios", function () {
+                                UpdateControlsSettings("FILTRO_FRM_ClasificacionPeticionATSol", "ClasificacionPeticionATSol", "frmClasificacionPeticion", function () {
                                     getDataModel();
                                 });
                             });
@@ -26,19 +26,15 @@ jQuery(document).ready(function () {
         });
     });
 });
-/*
-FILTRO_FRM_AnexosRadicadoAT	        FILTRO_FRM_AnexosRadicadoAT	 
-FILTRO_FRM_BotonesAT	            FILTRO_FRM_BotonesAT	 
-FILTRO_FRM_ClasificacionPeticionAT	FILTRO_FRM_ClasificacionPeticionAT	 
-FILTRO_FRM_DecisionAT	|           FILTRO_FRM_DecisionAT	 
-FILTRO_FRM_InfoRadicadoAT	        FILTRO_FRM_InfoRadicadoAT	 
-FILTRO_FRM_PeticionarioEnfoqueAT	FILTRO_FRM_PeticionarioEnfoqueAT	 
-FILTRO_FRM_PeticionariosAT	        FILTRO_FRM_PeticionariosAT	 
-FILTRO_FRM_PeticionarioTablaAT	    FILTRO_FRM_PeticionarioTablaAT
-*/
+
 
 this.getDataModel = function () {
     ENDREQUEST();
+    $("#btnBotonesAT_ImprimirPantalla").unbind("click");
+    $("#btnBotonesAT_ImprimirPantalla").click(function () {
+        window.print();
+        return false;
+    });
     Grid_Init("AnexosRadicadoAT_AnexosLista", null, true, function (fila) {
         fila.TamanoArchivoFormatted = CustomNumberFormat(fila.TamanoArchivo);
         fila.FechaCreacionFormatted = fila.FechaCreacion == this.undefined ? null : FormatDateTime(fila.FechaCreacion, true);
@@ -47,31 +43,23 @@ this.getDataModel = function () {
         fila.OpcionesRadicadoDocumento = replaceAll("#RutaVirtualArchivo#", fila.RutaVirtualArchivo, fila.OpcionesRadicadoDocumento);
         fila.OpcionesRadicadoDocumento = replaceAll("#CodigoDocumento#", fila.CodigoDocumento, fila.OpcionesRadicadoDocumento);
     });
+
+    Grid_Init("ClasificacionPeticionATSol_DerechosLista", null, true, function (fila) {
+        fila.Derecho = fila.Derecho.Nombre;
+        fila.Opciones = $("#OpcionesEditarFila").html();
+    })
+
     var local = ObtenerModelo();
 
     local.CodigoSolicitudOriginal = 5;
 
     Ultimus.AjaxPostData("{0}/ClasificacionTramites.svc/api/Radicado_Cargar".format(WebAplicationWCF), local, true, false, function (data) {
-        debugger;
+        //debugger;
         Response(data, function () {
             CargarFormulario(data);
         });
     }, "ERROR");
-    /*Ultimus.AjaxPostData("{0}/ClasificacionTramites.svc/api/CargarDocumentosRadicado".format(WebAplicationWCF), local, true, false, function (dataDocumentos) {
-        
-
-        Response(dataDocumentos, function () {
-            $("#AnexosRadicadoAT_AnexosLista").Grid("RenderGrid", dataDocumentos.Documentos);
-        });
-    }, "ERROR");
-    */
-    Ultimus.AjaxPostData("{0}/ClasificacionTramites.svc/api/CargarClasificacionPeticion".format(WebAplicationWCF), local, true, false, function (dataClasificacion) {
-        debugger;
-        Response(dataClasificacion, function () {
-            CargarClasificacionPeticion(dataClasificacion);
-        });
-    }, "ERROR");
-
+    
 }
 
 
@@ -125,38 +113,39 @@ this.CargarFormulario = function (data) {
 
         $("#AnexosRadicadoAT_AnexosLista").Grid("RenderGrid", data.Radicado.RadicadoDocumento);
 
+        CargarClasificacionPeticion(data.Radicado.ClasificacionPeticion);
+
+        $("#ClasificacionPeticionATSol_DerechosLista").Grid("RenderGrid", data.Radicado.DerechosClasificacion);
     }
 }
 
-this.CargarClasificacionPeticion = function (data) {
+
+this.CargarClasificacionPeticion = function (ClasificacionPeticion) {
 
     //CargarRelacionCampos();
-   
+
     //RelacionCamposFramework.Cargar(data);
 
-    if (data.ClasificacionPeticion != null) {
+    if (ClasificacionPeticion != null) {
 
-        $("#hiddenClasificacionPeticionAT_TipoPeticion").val(data.ClasificacionPeticion.TipoPeticion.Codigo);
-        $("#txtClasificacionPeticionAT_TipoPeticion").val(data.ClasificacionPeticion.TipoPeticion.Nombre);
+        $("#hiddenClasificacionPeticionATSol_TipoPeticion").val(ClasificacionPeticion.TipoPeticion.Codigo);
+        $("#txtClasificacionPeticionATSol_TipoPeticion").val(ClasificacionPeticion.TipoPeticion.Nombre);
 
-        $("#hiddenClasificacionPeticionAT_AreaDerechos").val(data.ClasificacionPeticion.AreaDerecho.Codigo);
-        $("#txtClasificacionPeticionAT_AreaDerechos").val(data.ClasificacionPeticion.AreaDerecho.Nombre);
+        $("#txtClasificacionPeticionATSol_DescripcionTipoPeticion").val(ClasificacionPeticion.TipoPeticion.Descripcion);
 
-        $("#txtClasificacionPeticionAT_Descripcion").val(data.ClasificacionPeticion.DescripcionAsesoria);
-        $("#txtClasificacionPeticionAT_Observaciones").val(data.ClasificacionPeticion.Observaciones);
-        
-        /*
-        radio_group_ClasificacionPeticionAT_RespuestaEscrita
-        
-        
-        */
-        if (data.ClasificacionPeticion.RespuestaEscrito == true) {
-            $("#radio_ClasificacionPeticionAT_RespuestaEscrita_0").attr('checked', true);
+        $("#hiddenClasificacionPeticionATSol_AreaDerechos").val(ClasificacionPeticion.AreaDerecho.Codigo);
+        $("#txtClasificacionPeticionATSol_AreaDerechos").val(ClasificacionPeticion.AreaDerecho.Nombre);
+
+        $("#txtClasificacionPeticionATSol_Descripcion").val(ClasificacionPeticion.DescripcionAsesoria);
+        $("#txtClasificacionPeticionATSol_Observaciones").val(ClasificacionPeticion.Observaciones);
+
+        if (ClasificacionPeticion.RespuestaEscrito == true) {
+            $("#radio_ClasificacionPeticionATSol_RespuestaEscrita_0").attr('checked', true);
         } else {
-            $("#radio_ClasificacionPeticionAT_RespuestaEscrita_1").attr('checked', true);
+            $("#radio_ClasificacionPeticionATSol_RespuestaEscrita_1").attr('checked', true);
         }
 
-        $("#hiddenClasificacionPeticionAT_ConclusionAsesoria").val(data.ClasificacionPeticion.ConclusionAsesoria.Codigo);
-        $("#txtClasificacionPeticionAT_ConclusionAsesoria").val(data.ClasificacionPeticion.ConclusionAsesoria.Nombre);
+        $("#hiddenClasificacionPeticionATSol_ConclusionAsesoria").val(ClasificacionPeticion.ConclusionAsesoria.Codigo);
+        $("#txtClasificacionPeticionATSol_ConclusionAsesoria").val(ClasificacionPeticion.ConclusionAsesoria.Nombre);
     }
 }

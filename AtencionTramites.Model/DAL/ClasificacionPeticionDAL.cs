@@ -27,6 +27,30 @@ namespace AtencionTramites.Model.DAL
 
         }
 
+        public ClasificacionPeticion GuardarClasificacionPeticion(DbAtencionTramites db, long CodigoSolicitud)
+        {
+            if (CodigoSolicitud == 0L)
+            {
+                return null;
+            }
+
+            ClasificacionPeticion clasificacionPeticion = (
+                from ClasificacionPeticion in db.ClasificacionPeticion
+                .AsNoTracking()
+                where ClasificacionPeticion.CodigoSolicitud == CodigoSolicitud
+                select ClasificacionPeticion).FirstOrDefault();
+
+            if (clasificacionPeticion != null) 
+            {
+                //db.
+               // db.SaveChanges
+                db.Commit();
+            }
+
+            return clasificacionPeticion;
+
+        }
+
         public void LlenarClasificacionPeticion(ClasificacionPeticion clasificacionPeticion)
         {
             if (clasificacionPeticion == null)

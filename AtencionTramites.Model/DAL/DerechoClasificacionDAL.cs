@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+using System.Data.Entity.Validation;
 using System.Linq;
 using AtencionTramites.Model.ModelAtencionTramites;
 
@@ -24,6 +27,69 @@ namespace AtencionTramites.Model.DAL
             LlenarDerechosClasificacion(derechosClasificacionLista);
 
             return derechosClasificacionLista;
+
+        }
+
+        public DerechosClasificacion GuardarDerechosClasificacion(DbAtencionTramites db, DerechosClasificacion derechosClasificacion)
+        {
+            DerechosClasificacion derecho = new DerechosClasificacion();
+
+            if (derechosClasificacion == null)
+            {
+                return null;
+            }
+            try
+            {
+                derecho = db.DerechosClasificacion.SingleOrDefault(b =>
+                            b.CodigoSolicitud == derechosClasificacion.CodigoSolicitud
+                            && b.CodigoDerecho == derechosClasificacion.CodigoDerecho
+                            && b.Habilitado == true);
+
+                if (derecho != null)
+                {
+                    derecho = null;
+                }
+                else
+                {
+                    derecho = new DerechosClasificacion();
+
+                    derecho.CodigoDerecho = derechosClasificacion.CodigoDerecho;
+                    derecho.CodigoSolicitud = derechosClasificacion.CodigoSolicitud;
+                    derecho.NombreUsuarioCreacion = derechosClasificacion.NombreUsuarioCreacion;
+                    derecho.IDUsuarioCreacion = derechosClasificacion.IDUsuarioCreacion;
+                    derecho.FechaCreacion = DateTime.Now;
+                    derecho.FechaUsuarioModifica = DateTime.Now;
+
+                    derecho.Habilitado = true;
+
+                    db.SaveChanges();
+                    db.Commit();
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                db.Rollback();
+            }
+            /*
+            DbUpdateException
+            DbUpdateConcurrencyException
+
+            DbEntityValidationException
+
+            NotSupportedException
+
+            ObjectDisposedException
+
+
+            InvalidOperationException  
+            */
+
+            finally 
+            { 
+                db.Close();
+            }
+
+            return derecho;
 
         }
 

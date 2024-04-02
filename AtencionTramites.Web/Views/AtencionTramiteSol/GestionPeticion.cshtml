@@ -169,7 +169,7 @@
             <a data-toggle="tab" href="#menu4">Gestión de la petición</a>
         </li>
         <li id="liMenu5">
-            <a data-toggle="tab" href="#menu5">Decisión</a>
+            <a data-toggle="tab" href="#menu5">Conclusión de la petición</a>
         </li>
     </ul>
     <div class="tab-content">
@@ -187,195 +187,209 @@
                             <div class="row">
                                 <div class="col-12">
                                     <h3 class="text-center tituloPanel">Datos básicos del peticionario</h3>
-
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_NumeroRadicado")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_CanalAtencion")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_Fecha")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_TipoSolicitante")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_EsAnonimo")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_TipoDocId")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_NumIdentificacion")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_Remitente")
-                                </div>
+                                    
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_NumeroRadicado")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_CanalAtencion")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_Fecha")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_TipoSolicitante")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_EsAnonimo")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_TipoDocId")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_NumIdentificacion")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_Remitente")
+                                    
                             </div>
                         </div>
-                        <div class="columna">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3 class="text-center tituloPanel">Datos enfoques diferenciales y de género</h3>
-
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_MiembroGrupoEtnico")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_SexoAsignado")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_IdentidadGenero")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_OrientacionSexual")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_ExpresionGenero")
-                                    @UltimusHelper.Dynamic("InfoRadicadoAT_RangoEdad")
-                                </div>
+                    </div>
+                    <div class="columna">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center tituloPanel">Datos enfoques diferenciales y de género</h3>
+                                
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_MiembroGrupoEtnico")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_SexoAsignado")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_IdentidadGenero")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_OrientacionSexual")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_ExpresionGenero")
+                                @UltimusHelper.Dynamic("InfoRadicadoAT_RangoEdad")
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-            <form id="frmAnexosRadicado">
-                <h3 class="TituloAcordeon">
-                    <a data-toggle="collapse" href="#divCollapse1" style="color: black; text-decoration: none;">
-                        <i class="fa fa-chevron-circle-down"></i>
-                        &nbsp;Anexos del Radicado Enviado
-                    </a>
-                </h3>
-                <div id="divCollapse1" class="panel-collapse collapse in">
-                    <div class="row">
-                        <div class="col-md-8">
-                            @UltimusHelper.Dynamic("AnexosRadicadoAT_AnexosLista")
-                        </div>
-                    </div>
+            </div>
+        </form>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+        <form id="frmAnexosRadicado">
+            <h3 class="TituloAcordeon">
+                <a data-toggle="collapse" href="#divCollapse1" style="color: black; text-decoration: none;">
+                    <i class="fa fa-chevron-circle-down"></i>
+                    &nbsp;Anexos del Radicado Enviado
+                </a>
+            </h3>
+            <div id="divCollapse1" class="panel-collapse collapse in">
+                <div class="row">
+                    <div class="col-md-8">
+                        
+                    @UltimusHelper.Dynamic("AnexosRadicadoAT_AnexosLista")
+                        
+                            </div>
                 </div>
-            </form>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-            <form id="frmRegistroPeticionarios">
-                <h3 class="TituloAcordeon">
-                    <a data-toggle="collapse" href="#divCollapse2" style="color: black; text-decoration: none;">
-                        <i class="fa fa-chevron-circle-down"></i>
-                        &nbsp;Registro de peticionarios
-                    </a>
-                </h3>
-                <div id="divCollapse2" class="panel-collapse collapse in">
-                    <div class="row">
-                        <div class="col-md-12">
-                            @UltimusHelper.Dynamic("PeticionarioTablaAT_PeticionariosLista")
-                        </div>
-                       
+            </div>
+        </form>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <form id="frmRegistroPeticionarios">
+            <h3 class="TituloAcordeon">
+                <a data-toggle="collapse" href="#divCollapse2" style="color: black; text-decoration: none;">
+                    <i class="fa fa-chevron-circle-down"></i>
+                    &nbsp;Registro de peticionarios
+                </a>
+            </h3>
+            <div id="divCollapse2" class="panel-collapse collapse in">
+                <div class="row">
+                    
+                    <div class="col-md-12">
+                        @UltimusHelper.Dynamic("PeticionarioTablaAT_PeticionariosLista")
                     </div>
+                    <div class="row">
+
+                        @UltimusHelper.Dynamic("PeticionarioTablaAT_AgregarPeticionario")
+
+                    </div>
+                    
+                        </div>
                     <div class="row">
                         <div class="contenedor">
                             <div class="columna">
                                 <div class="row">
                                     <div class="col-md-10">
                                         <h3 class="tituloPanel">Datos básicos del usuario (a)</h3>
-                                        @UltimusHelper.Dynamic("PeticionarioAT_TipoSolicitante")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Anonimo")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_TipoDocId")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_NumIdentificacion")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Remitente")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_EstadoCivil")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_NivelEstudio")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Estrato")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_NombreIdentitario")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Confidencial")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Contacto")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Correo")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Telefono")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Direccion")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Nacionalidad")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Pais")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Departamento")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_Ciudad")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_CentroPoblado")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_CondicionDiscapacidad")
-                                        @UltimusHelper.Dynamic("PeticionarioAT_SituacionDiscapacidad")
+                                       
+                                            @UltimusHelper.Dynamic("PeticionarioAT_TipoSolicitante")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Anonimo")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_TipoDocId")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_NumIdentificacion")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Remitente")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_EstadoCivil")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_NivelEstudio")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Estrato")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_NombreIdentitario")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Confidencial")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Contacto")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Correo")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Telefono")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Direccion")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Nacionalidad")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Pais")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Departamento")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_Ciudad")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_CentroPoblado")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_CondicionDiscapacidad")
+                                            @UltimusHelper.Dynamic("PeticionarioAT_SituacionDiscapacidad")
+                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="columna">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h3 class="tituloPanel">Datos enfoques diferenciales y de género</h3>
+                                            
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_MiembroGrupoEtnico")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_GrupoEtnico")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_SexoAsignado")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_IdentidadGnero")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Orientacionsexual")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_ExpresionGenero")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_RangoEdad")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Grupo")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Subgrupo")
+                                            @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Comunidad")
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="columna">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <h3 class="tituloPanel">Datos enfoques diferenciales y de género</h3>
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_MiembroGrupoEtnico")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_GrupoEtnico")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_SexoAsignado")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_IdentidadGnero")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Orientacionsexual")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_ExpresionGenero")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_RangoEdad")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Grupo")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Subgrupo")
-                                        @UltimusHelper.Dynamic("PeticionarioEnfoqueAT_Comunidad")
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <form id="frmClasificacionPeticion">
+                    <h3 class="TituloAcordeon">
+                        <a data-toggle="collapse" href="#divCollapse3" style="color: black; text-decoration: none;">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            &nbsp;Clasificación de la petición
+                        </a>
+                    </h3>
+                    <div id="divCollapse3" class="panel-collapse collapse in">
+                        <div class="row">
+                            <div class="col-md-8 ">
+                                
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_TipoPeticion")
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_DescripcionTipoPeticion")
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_AreaDerechos")
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_Derechos")
 
-                                    </div>
-                                </div>
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_AgregarDerecho")
+
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_DerechosLista")
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_Descripcion")
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_Observaciones")
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_RespuestaEscrita")
+                                @UltimusHelper.Dynamic("ClasificacionPeticionATSol_ConclusionAsesoria")
+                                
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-            <form id="frmClasificacionPeticion">
-                <h3 class="TituloAcordeon">
-                    <a data-toggle="collapse" href="#divCollapse3" style="color: black; text-decoration: none;">
-                        <i class="fa fa-chevron-circle-down"></i>
-                        &nbsp;Clasificación de la petición
-                    </a>
-                </h3>
-                <div id="divCollapse3" class="panel-collapse collapse in">
-                    <div class="row">
-                        <div class="col-md-8 ">
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_TipoPeticion")
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_DescripcionTipoPeticion")
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_AreaDerechos")
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_Derechos")
-                            
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_AgregarDerecho")
-                            
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_DerechosLista")
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_Descripcion")
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_Observaciones")
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_RespuestaEscrita")
-                            @UltimusHelper.Dynamic("ClasificacionPeticionAT_ConclusionAsesoria")
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div id="menu4" class="tab-pane fade in active">
-            <form id="frmConclusionPeticion2">
-                <h3 class="TituloAcordeon">
-                    <a data-toggle="collapse" href="#divCollapse4" style="color: black; text-decoration: none;">
-                        <i class="fa fa-chevron-circle-down"></i>
-                        &nbsp;Gestión de la petición
-                    </a>
-                </h3>
-                <div id="divCollapse4" class="panel-collapse collapse in">
-                    <div class="row">
-                        <div class="col-md-6">
-                            @UltimusHelper.Dynamic("DecisionAT_Decision")
-                            @UltimusHelper.Dynamic("DecisionAT_Comentarios")
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div id="menu5" class="tab-pane fade">
-            <form id="frmConclusionPeticion">
-                <h3 class="TituloAcordeon">
-                    <a data-toggle="collapse" href="#divCollapse5" style="color: black; text-decoration: none;">
-                        <i class="fa fa-chevron-circle-down"></i>
-                        &nbsp;Decisión
-                    </a>
-                </h3>
-                <div id="divCollapse5" class="panel-collapse collapse in">
-                    <div class="row">
-                        <div class="col-md-6">
-                            @UltimusHelper.Dynamic("DecisionAT_Decision")
-                            @UltimusHelper.Dynamic("DecisionAT_Comentarios")
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
+            <div id="menu4" class="tab-pane fade in active">
+                <form id="frmGestionPeticion">
+                    <h3 class="TituloAcordeon">
+                        <a data-toggle="collapse" href="#divCollapse4" style="color: black; text-decoration: none;">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            &nbsp;Gestión de la petición
+                        </a>
+                    </h3>
+                    <div id="divCollapse4" class="panel-collapse collapse in">
+                        <div class="row">
 
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="menu5" class="tab-pane fade">
+                <form id="frmDecision">
+                    <h3 class="TituloAcordeon">
+                        <a data-toggle="collapse" href="#divCollapse5" style="color: black; text-decoration: none;">
+                            <i class="fa fa-chevron-circle-down"></i>
+                            &nbsp;Conclusión de la petición
+                        </a>
+                    </h3>
+                    <div id="divCollapse5" class="panel-collapse collapse in">
+                        <div class="row">
+                            <div class="col-md-6">
+                                
+                                @UltimusHelper.Dynamic("DecisionAT_Decision")
+                                @UltimusHelper.Dynamic("DecisionAT_Comentarios")
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
     </div>
-</div>
-<div id="OpcionesAnexosLectura" style="display:none;">
-    <button type="button" title="Ver" class="btn btn-sm btn-default" onclick="window.open('#RutaVirtualArchivo#')">&nbsp;<i class="fa fa-external-link"></i></button>
-</div>
-<div id="OpcionesEditarFila" style="display:none;">
-    <button type="button" title="Eliminar" class="btn btn-sm btn-default" onclick="Grid_Delete(this)">&nbsp;<i class="fa fa-trash"></i></button>
-</div>
+    <div id="OpcionesAnexosLectura" style="display:none;">
+        <button type="button" title="Ver" class="btn btn-sm btn-default" onclick="window.open('#RutaVirtualArchivo#')">&nbsp;<i class="fa fa-external-link"></i></button>
+    </div>
+    <div id="OpcionesEditarFila" style="display:none;">
+        <button type="button" title="Eliminar" class="btn btn-sm btn-default" onclick="Grid_Delete(this)">&nbsp;<i class="fa fa-trash"></i></button>
+    </div>
 
-@section scripts{
-    @Scripts.Render("~/Scripts/AtencionTramitesSol/GestionPeticion")
-}
+    @section scripts{
+        @Scripts.Render("~/Scripts/AtencionTramitesSol/GestionPeticion")
+    }

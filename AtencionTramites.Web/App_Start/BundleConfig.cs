@@ -55,9 +55,8 @@ namespace AtencionTramites
                 .Include("~/Scripts/jquery.inputmask/inputmask.phone.extensions.min.js")
                 .Include("~/Scripts/jquery.inputmask/inputmask.regex.extensions.min.js")
                 .Include("~/Scripts/jquery.inputmask/inputmask.date.extensions.min.js"));
-            bundles.Add(new ScriptBundle("~/bundles/summernote").Include("~/Scripts/summernote/summernote.min.js", "~/Scripts/summernote/lang/summernote-es-ES.js"));
-
-            #region Proceso Clasificación
+			bundles.Add(new ScriptBundle("~/bundles/summernote").Include("~/Scripts/summernote/summernote.min.js", "~/Scripts/summernote/lang/summernote-es-ES.js"));
+			#region Proceso Clasificación
 
             bundles.Add(new ScriptBundle("~/Scripts/ClasificacionTramites/ClasificacionTramite")
                 .Include("~/Ultimus.Framework/ClasificacionTramites/API.ClasificacionTramite.js")
@@ -67,11 +66,9 @@ namespace AtencionTramites
                 .Include("~/Ultimus.Framework/ClasificacionTramites/API.Seguimiento.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
-
-            #endregion
+			#endregion
 
             #region Proceso Asesorias
-
             bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesAse/Aprobar")
                 .Include("~/Ultimus.Framework/AtencionTramitesAse/API.Aprobar.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
@@ -86,8 +83,7 @@ namespace AtencionTramites
                 .Include("~/Ultimus.Framework/AtencionTramitesAse/API.GenerarDocumento.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );
-
-            bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesAse/RevisionVistoBueno")
+			bundles.Add(new ScriptBundle("~/Scripts/AtencionTramitesAse/RevisionVistoBueno")
                 .Include("~/Ultimus.Framework/AtencionTramitesAse/API.RevisionVistoBueno.js")
                 .Include("~/Ultimus.Framework/Ultimus.API.FuncionesGlobales.js")
                 );

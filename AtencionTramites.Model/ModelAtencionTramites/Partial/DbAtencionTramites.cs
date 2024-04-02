@@ -28,5 +28,10 @@ namespace AtencionTramites.Model.ModelAtencionTramites
         {
             DatabaseTransaction.Rollback();
         }
+
+        public void Close()
+        {
+            DatabaseTransaction.Dispose();
+        }
     }
 }

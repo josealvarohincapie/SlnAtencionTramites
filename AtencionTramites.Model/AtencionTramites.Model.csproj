@@ -90,6 +90,7 @@
     <Compile Include="Classes\AtencionTramiteQue_RadicadoJSON.cs" />
     <Compile Include="Classes\CatalogoPostJSON.cs" />
     <Compile Include="Classes\CiudadJSON.cs" />
+    <Compile Include="Classes\DerechoClasificacion_JSON.cs" />
     <Compile Include="Classes\ClasificacionPeticion_JSON.cs" />
     <Compile Include="Classes\Documentos_RadicadoJSON.cs" />
     <Compile Include="Classes\Constantes.cs" />

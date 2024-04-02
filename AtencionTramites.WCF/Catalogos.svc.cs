@@ -1,5 +1,6 @@
 ﻿using AtencionTramites.Model.Classes;
 using AtencionTramites.Model.ModelAtencionTramites;
+using NLog.Fluent;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -316,6 +317,60 @@ namespace AtencionTramites.WCF
                             codigo = Convert.ToString(ele.Codigo),
                             descripcion = ele.Nombre
                         });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                UltimusLogs.Error(ex);
+            }
+            return ret;
+        }
+
+		/// <summary>
+        /// Permite consultar el catálogo Tipo petición a partir de:
+        /// - Código del catalogo 
+        /// - Filtro nombre
+        /// - Todos
+        /// </summary>
+        /// <param name="model">Objeto JSON con los parámetros de consulta</param>
+        /// <returns>Lista con el objeto JSON con la información del catálogo</returns>
+        public List<CatalogoPostJSON> ObtenerCatalogoTipoPeticion(CatalogoPostJSON model) {
+        
+            
+                List<CatalogoPostJSON> ret = new List<CatalogoPostJSON>();
+            try
+            {
+                using (DbAtencionTramites db = new DbAtencionTramites())
+                {
+                    if (model.CodigoTipoPeticion != null && model.CodigoTipoPeticion > 0)
+                    {                        
+                        foreach (TipoPeticion ele in from q in db.TipoPeticion.AsNoTracking()
+                                                     where (q.Codigo == model.CodigoTipoPeticion) && q.Habilitado
+                                                     select q)
+                        {
+                            ret.Add(new CatalogoPostJSON
+                            {
+                                CodigoTipoPeticion = ele.Codigo,
+                                Descripcion = ele.Descripcion,
+                                Nombre = ele.Nombre
+                            });
+                        }
+                    }
+                    else
+                    {
+                        foreach (TipoPeticion ele in from q in db.TipoPeticion.AsNoTracking()
+                                                     where (string.IsNullOrEmpty(model.filtro) || q.Nombre.ToLower().Contains(model.filtro.ToLower())) && q.Habilitado
+                                                     orderby q.Nombre
+                                                     select q)
+                        {
+                            ret.Add(new CatalogoPostJSON
+                            {
+                                CodigoTipoPeticion = ele.Codigo,
+                                Descripcion = ele.Descripcion,
+                                Nombre = ele.Nombre
+                            });
+                        }
                     }
                 }
             }

@@ -24,6 +24,9 @@ namespace AtencionTramites.Model.ModelAtencionTramites
         public string Nombre { get; set; }
 
         public bool Habilitado { get; set; }
+        
+        [StringLength(1000)]
+        public string Descripcion { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ClasificacionPeticion> ClasificacionPeticion { get; set; }
